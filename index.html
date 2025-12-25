@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Lee | 作品集与个人介绍</title>
+    <meta name="description" content="Lee 的个人作品集与介绍网站。展示代表性项目、经历与技能。" />
+    <meta property="og:title" content="Lee | 作品集与个人介绍" />
+    <meta property="og:description" content="代表性项目、经历与技能，一页读懂我的价值。" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <a class="brand-name" href="#top" id="brandName">Lee</a>
+        </div>
+
+        <nav class="nav" aria-label="主导航">
+          <a href="#about" data-i18n="nav.about">关于</a>
+          <a href="#projects" data-i18n="nav.projects">项目</a>
+          <a href="#experience" data-i18n="nav.experience">经历</a>
+          <a href="#skills" data-i18n="nav.skills">技能</a>
+          <a href="#contact" data-i18n="nav.contact">联系</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn btn-ghost" id="langToggle" type="button" aria-label="切换语言">
+            <span class="btn-icon" aria-hidden="true">🌐</span>
+            <span id="langToggleText">EN</span>
+          </button>
+
+          <button class="btn btn-ghost" id="themeToggle" type="button" aria-label="切换主题">
+            <span class="btn-icon" aria-hidden="true">🌓</span>
+            <span data-i18n="actions.theme">主题</span>
+          </button>
+
+          <a class="btn btn-primary" id="resumeCta" href="./assets/resume.pdf" target="_blank" rel="noopener">
+            <span class="btn-icon" aria-hidden="true">⬇</span>
+            <span data-i18n="actions.resume">下载简历</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">把复杂变简单，把愿景变落地</p>
+            <h1 class="hero-title">
+              <span id="heroName">Lee</span>
+              <span class="hero-subtitle" id="heroTitle" data-i18n="hero.title">产品 / 设计 / 技术（可自定义）</span>
+            </h1>
+            <p class="hero-lead" id="heroLead" data-i18n="hero.lead">
+              用可衡量的结果交付业务价值：更高的转化、更快的交付、更稳的增长。
+            </p>
+
+            <div class="hero-metrics" id="heroMetrics" aria-label="关键指标"></div>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects">
+                <span class="btn-icon" aria-hidden="true">↘</span>
+                <span data-i18n="hero.ctaPrimary">查看代表性项目</span>
+              </a>
+              <a class="btn btn-ghost" href="#contact">
+                <span class="btn-icon" aria-hidden="true">✉</span>
+                <span data-i18n="hero.ctaSecondary">联系我</span>
+              </a>
+            </div>
+
+            <div class="social" id="socialLinks" aria-label="社交链接"></div>
+          </div>
+
+          <div class="hero-card" role="region" aria-label="个人简介卡片">
+            <div class="avatar" aria-hidden="true">
+              <img src="./assets/avatar.svg" alt="" />
+            </div>
+            <div class="hero-card-body">
+              <h2 class="hero-card-title" data-i18n="card.title">一句话定位</h2>
+              <p class="hero-card-text" id="oneLiner" data-i18n="card.oneLiner">
+                面向增长的产品/设计/工程复合型人才，专注从0到1与从1到N。
+              </p>
+              <ul class="hero-card-list" id="highlights"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="about.title">关于我</h2>
+            <p class="section-subtitle" id="aboutSubtitle" data-i18n="about.subtitle">
+              简洁叙述你的背景、优势与价值观，让雇主/合作方快速形成信任。
+            </p>
+          </div>
+
+          <div class="two-col">
+            <div class="prose" id="aboutBody"></div>
+
+            <aside class="panel" aria-label="快速信息">
+              <dl class="kv" id="quickFacts"></dl>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="projects.title">代表性项目</h2>
+            <p class="section-subtitle" data-i18n="projects.subtitle">
+              少即是多：用3–6个项目讲清楚你的方法论与可复制能力。
+            </p>
+          </div>
+
+          <div class="filters" aria-label="项目筛选">
+            <button class="chip is-active" type="button" data-filter="all" data-i18n="projects.filterAll">全部</button>
+            <div id="tagChips" class="chip-row" aria-label="标签列表"></div>
+          </div>
+
+          <div class="grid" id="projectGrid" aria-label="项目列表"></div>
+
+          <div class="section-foot">
+            <a class="btn btn-ghost" href="#contact">
+              <span class="btn-icon" aria-hidden="true">🤝</span>
+              <span data-i18n="projects.cta">想了解更多项目细节？我们聊聊</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="experience.title">经历</h2>
+            <p class="section-subtitle" data-i18n="experience.subtitle">
+              用“动作 + 影响 + 指标”的语言呈现你的贡献，避免流水账。
+            </p>
+          </div>
+
+          <ol class="timeline" id="timeline" aria-label="经历时间线"></ol>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="skills.title">技能栈</h2>
+            <p class="section-subtitle" data-i18n="skills.subtitle">
+              把技能拆成“能力域”而非堆关键词：战略、执行、工具、协作。
+            </p>
+          </div>
+
+          <div class="skills" id="skillGroups" aria-label="技能分组"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="contact.title">联系</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">
+              让机会能找到你：邮箱、社交、所在地与可合作方向。
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-main">
+              <h3 class="contact-title" id="contactTitle" data-i18n="contact.cardTitle">开放合作 / 求职</h3>
+              <p class="contact-text" id="contactText" data-i18n="contact.cardText">
+                如果你正在寻找可以把愿景落地的人，我们可以从一次简短的对话开始。
+              </p>
+
+              <div class="contact-actions">
+                <a class="btn btn-primary" id="emailBtn" href="mailto:hello@example.com">
+                  <span class="btn-icon" aria-hidden="true">✉</span>
+                  <span data-i18n="contact.email">发送邮件</span>
+                </a>
+                <button class="btn btn-ghost" id="copyEmailBtn" type="button">
+                  <span class="btn-icon" aria-hidden="true">⧉</span>
+                  <span data-i18n="contact.copy">复制邮箱</span>
+                </button>
+              </div>
+
+              <p class="contact-meta" id="contactMeta"></p>
+            </div>
+
+            <div class="contact-side">
+              <div class="panel">
+                <h4 class="panel-title" data-i18n="contact.links">更多链接</h4>
+                <div class="links" id="contactLinks"></div>
+              </div>
+
+              <div class="panel">
+                <h4 class="panel-title" data-i18n="contact.resumePreview">简历预览</h4>
+                <p class="muted" data-i18n="contact.resumeHint">
+                  把你的简历 PDF 放到 assets/resume.pdf 即可自动生效。
+                </p>
+                <a class="btn btn-ghost" id="resumeSecondary" href="./assets/resume.pdf" target="_blank" rel="noopener">
+                  <span class="btn-icon" aria-hidden="true">↗</span>
+                  <span data-i18n="contact.openResume">打开 PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <p class="muted">
+            © <span id="year"></span> <span id="footerName">Lee</span>.
+            <span data-i18n="footer.rights">保留所有权利。</span>
+          </p>
+          <p class="muted">
+            <span data-i18n="footer.built">构建于</span>
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+            /
+            <a href="https://vercel.com/" target="_blank" rel="noopener">Vercel</a>
+            <span data-i18n="footer.note">（任选其一）</span>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <dialog class="modal" id="projectModal" aria-label="项目详情">
+      <div class="modal-inner">
+        <button class="modal-close" id="modalClose" type="button" aria-label="关闭">×</button>
+        <div class="modal-content" id="modalContent"></div>
+      </div>
+    </dialog>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
