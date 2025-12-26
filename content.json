@@ -1,342 +1,618 @@
-:root{
-  --bg: #ffffff;
-  --surface: #ffffff;
-  --surface-2: #f7f7fb;
-  --text: #0b0b10;
-  --muted: #5a5a6a;
-  --border: rgba(10,10,18,.12);
-
-  --primary: #6d67ff;
-  --primary-2: #bfa8ff;
-
-  --shadow: 0 10px 30px rgba(22,22,32,.10);
-  --radius: 18px;
-  --radius-sm: 12px;
-
-  --container: 1120px;
+{
+  "profile": {
+    "name": {
+      "zh": "李锦元 Lee",
+      "en": "Lee"
+    },
+    "headline": {
+      "zh": "产品/设计/技术（请替换成你的精准定位）",
+      "en": "Product / Design / Engineering (replace with your positioning)"
+    },
+    "lead": {
+      "zh": "我把战略拆成路线图，把路线图拆成交付，把交付沉淀成可复制的方法论。",
+      "en": "I turn strategy into roadmap, roadmap into delivery, and delivery into repeatable playbooks."
+    },
+    "oneLiner": {
+      "zh": "面向增长的复合型人才：把用户需求、业务目标与技术现实对齐。",
+      "en": "A growth-minded generalist aligning user needs, business goals, and technical reality."
+    },
+    "metrics": [
+      {
+        "value": {
+          "zh": "论点 → 尽调 → 决策",
+          "en": "Thesis → Diligence → Decision"
+        },
+        "label": {
+          "zh": "投研闭环",
+          "en": "Research Loop"
+        }
+      },
+      {
+        "value": {
+          "zh": "TAM / 单位经济 / 估值",
+          "en": "TAM / Unit Econ / Valuation"
+        },
+        "label": {
+          "zh": "核心框架",
+          "en": "Core Frameworks"
+        }
+      },
+      {
+        "value": {
+          "zh": "SQL / Python / Excel",
+          "en": "SQL / Python / Excel"
+        },
+        "label": {
+          "zh": "数据驱动",
+          "en": "Data-driven"
+        }
+      }
+    ],
+    "highlights": {
+      "zh": [
+        "擅长把模糊需求变成可执行的PRD与里程碑",
+        "用数据定义“成功”，用实验缩短不确定性",
+        "以体验为表、以效率为骨、以增长为魂"
+      ],
+      "en": [
+        "Turn ambiguity into PRDs and milestones",
+        "Define success with metrics; reduce uncertainty with experiments",
+        "Experience on the surface, efficiency underneath, growth as the core"
+      ]
+    },
+    "social": [
+      {
+        "label": {
+          "zh": "GitHub",
+          "en": "GitHub"
+        },
+        "url": "https://github.com/"
+      },
+      {
+        "label": {
+          "zh": "LinkedIn",
+          "en": "LinkedIn"
+        },
+        "url": "https://www.linkedin.com/"
+      },
+      {
+        "label": {
+          "zh": "作品集PDF",
+          "en": "Portfolio PDF"
+        },
+        "url": "https://example.com/"
+      }
+    ],
+    "email": "hello@example.com",
+    "resumePath": "./assets/resume.pdf",
+    "contactTitle": {
+      "zh": "开放合作 / 求职",
+      "en": "Open to Work / Collaboration"
+    },
+    "contactText": {
+      "zh": "如果你正在寻找能把愿景落地、把结果交付的人，我们可以从一次简短的对话开始。",
+      "en": "If you're looking for someone who ships outcomes, let’s start with a short conversation."
+    },
+    "contactMeta": {
+      "zh": "所在地：可填城市｜可远程｜可出差（按需修改）",
+      "en": "Location: City | Remote | Travel (edit as needed)"
+    },
+    "contactLinks": [
+      {
+        "label": {
+          "zh": "邮箱",
+          "en": "Email"
+        },
+        "url": "mailto:hello@example.com"
+      },
+      {
+        "label": {
+          "zh": "日历预约",
+          "en": "Schedule"
+        },
+        "url": "https://cal.com/"
+      },
+      {
+        "label": {
+          "zh": "下载简历",
+          "en": "Resume"
+        },
+        "url": "./assets/resume.pdf"
+      }
+    ]
+  },
+  "about": {
+    "subtitle": {
+      "zh": "用一句话概括你的职业主线：你解决什么问题，靠什么方法，带来什么结果。",
+      "en": "Summarize your professional narrative: problems, approach, and outcomes."
+    },
+    "paragraphs": {
+      "zh": [
+        "这里放你的个人介绍正文。建议以“背景—方法—成果—偏好”的结构组织，读起来像一条清晰的增长曲线。",
+        "你可以写：你所在行业/领域、你擅长的场景（增长、商业化、平台、体验）、你常用的分析和决策框架，以及你对团队协作的偏好。"
+      ],
+      "en": [
+        "Write your bio here. A clean structure is: context → approach → outcomes → preferences.",
+        "Mention industries, problems you solve, frameworks you use, and how you collaborate."
+      ]
+    },
+    "bullets": {
+      "zh": [
+        "方法论：用户研究 → 机会评估 → 方案设计 → 实验验证 → 规模化交付",
+        "产出物：PRD / Roadmap / 信息架构 / 原型 / 指标体系 / 复盘",
+        "风格：清晰、克制、可交付"
+      ],
+      "en": [
+        "Playbook: research → opportunity sizing → design → experiments → scalable delivery",
+        "Artifacts: PRD, roadmap, IA, prototypes, metrics, post-mortems",
+        "Style: clear, disciplined, ship-ready"
+      ]
+    },
+    "quickFacts": [
+      {
+        "k": {
+          "zh": "核心方向",
+          "en": "Focus"
+        },
+        "v": {
+          "zh": "增长 / 产品策略 / 体验与效率（修改）",
+          "en": "Growth / Strategy / Experience & Efficiency (edit)"
+        }
+      },
+      {
+        "k": {
+          "zh": "行业",
+          "en": "Industry"
+        },
+        "v": {
+          "zh": "互联网 / ToB / ToC（修改）",
+          "en": "Internet / B2B / B2C (edit)"
+        }
+      },
+      {
+        "k": {
+          "zh": "合作方式",
+          "en": "Engagement"
+        },
+        "v": {
+          "zh": "全职 / 兼职 / 顾问（修改）",
+          "en": "Full-time / Part-time / Consulting (edit)"
+        }
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "p1",
+      "title": {
+        "zh": "项目A：增长漏斗重构",
+        "en": "Project A: Funnel Redesign"
+      },
+      "summary": {
+        "zh": "把注册→激活→转化拆解为可实验的节点，提升核心指标（示例）。",
+        "en": "Decomposed activation journey into testable steps, improved core metrics (sample)."
+      },
+      "description": {
+        "zh": "这里写更完整的项目背景：目标、约束、用户、业务、技术边界。",
+        "en": "Write the full context: goals, constraints, users, business, and tech boundaries."
+      },
+      "role": {
+        "zh": "负责人",
+        "en": "Lead"
+      },
+      "tags": [
+        "Growth",
+        "Product"
+      ],
+      "stack": [
+        "SQL",
+        "Experiment",
+        "Analytics"
+      ],
+      "metrics": {
+        "zh": [
+          "转化率 +X%（填真实）",
+          "CAC -X%（填真实）",
+          "上线周期缩短 X 天（填真实）"
+        ],
+        "en": [
+          "Conversion +X% (fill real)",
+          "CAC -X% (fill real)",
+          "Ship cycle -X days (fill real)"
+        ]
+      },
+      "bullets": {
+        "zh": [
+          "定义北极星指标与护栏指标",
+          "设计实验矩阵并推进跨团队执行",
+          "建立复盘机制并沉淀可复用模板"
+        ],
+        "en": [
+          "Defined north-star & guardrails",
+          "Ran experiment matrix across teams",
+          "Built post-mortem rituals and reusable templates"
+        ]
+      },
+      "links": {
+        "case": "https://example.com/",
+        "demo": "https://example.com/"
+      }
+    },
+    {
+      "id": "p2",
+      "title": {
+        "zh": "项目B：企业级后台信息架构",
+        "en": "Project B: Enterprise IA"
+      },
+      "summary": {
+        "zh": "以角色与任务为中心重构导航与权限，降低培训成本（示例）。",
+        "en": "Rebuilt navigation & permissions around roles and tasks, reduced training cost (sample)."
+      },
+      "description": {
+        "zh": "补充：用户画像、关键任务、信息架构图、灰度策略、风险控制。",
+        "en": "Include personas, tasks, IA diagrams, rollout strategy, and risk controls."
+      },
+      "role": {
+        "zh": "产品/体验",
+        "en": "PM/UX"
+      },
+      "tags": [
+        "B2B",
+        "UX"
+      ],
+      "stack": [
+        "IA",
+        "RBAC",
+        "Design System"
+      ],
+      "metrics": {
+        "zh": [
+          "工单量 -X%（填真实）",
+          "新手上手时间 -X%（填真实）"
+        ],
+        "en": [
+          "Tickets -X% (fill real)",
+          "Time-to-first-value -X% (fill real)"
+        ]
+      },
+      "bullets": {
+        "zh": [
+          "梳理角色、权限与任务路径",
+          "建立模块化信息架构与组件规范",
+          "推动灰度发布并监控指标"
+        ],
+        "en": [
+          "Mapped roles/permissions/task flows",
+          "Created modular IA + component spec",
+          "Shipped via gradual rollout and monitored KPIs"
+        ]
+      },
+      "links": {
+        "case": "https://example.com/"
+      }
+    },
+    {
+      "id": "p3",
+      "title": {
+        "zh": "项目C：自动化数据看板",
+        "en": "Project C: Automated Dashboard"
+      },
+      "summary": {
+        "zh": "把周报从手工搬运升级为自动化看板，提高决策效率（示例）。",
+        "en": "Automated weekly reporting into dashboards, improved decision velocity (sample)."
+      },
+      "description": {
+        "zh": "可写：数据口径、ETL、可视化、权限、性能优化与告警。",
+        "en": "Talk about definitions, ETL, visualization, access control, performance, alerts."
+      },
+      "role": {
+        "zh": "数据/产品",
+        "en": "Data/PM"
+      },
+      "tags": [
+        "Data",
+        "Ops"
+      ],
+      "stack": [
+        "Python",
+        "BI",
+        "ETL"
+      ],
+      "metrics": {
+        "zh": [
+          "节省人时 X 小时/周（填真实）",
+          "决策周期缩短 X%（填真实）"
+        ],
+        "en": [
+          "Saved X hours/week (fill real)",
+          "Decision cycle -X% (fill real)"
+        ]
+      },
+      "bullets": {
+        "zh": [
+          "统一指标口径与数据字典",
+          "自动化数据链路并接入告警",
+          "为管理层定制视图与钻取能力"
+        ],
+        "en": [
+          "Standardized metrics & data dictionary",
+          "Automated pipeline with alerting",
+          "Built exec views with drill-down"
+        ]
+      },
+      "links": {
+        "repo": "https://github.com/"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "title": {
+        "zh": "岗位名称",
+        "en": "Role"
+      },
+      "org": {
+        "zh": "公司/团队",
+        "en": "Company/Team"
+      },
+      "time": {
+        "zh": "2023.01 — 现在（示例）",
+        "en": "Jan 2023 — Present (sample)"
+      },
+      "bullets": {
+        "zh": [
+          "用一条最重要的成果开头：动作 + 影响 + 指标（示例）",
+          "补充1–3条关键贡献：跨团队、流程、架构、增长、成本等",
+          "如果有领导力：带团队/带项目/带机制（示例）"
+        ],
+        "en": [
+          "Lead with your biggest outcome: action + impact + metric (sample)",
+          "Add 1–3 key contributions: cross-team, process, architecture, growth, cost",
+          "Leadership signals: led team/project/operating cadence (sample)"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "岗位名称（上一个）",
+        "en": "Role (previous)"
+      },
+      "org": {
+        "zh": "公司/团队（上一个）",
+        "en": "Company/Team (previous)"
+      },
+      "time": {
+        "zh": "2021.06 — 2022.12（示例）",
+        "en": "Jun 2021 — Dec 2022 (sample)"
+      },
+      "bullets": {
+        "zh": [
+          "写真实经历，尽量量化。",
+          "聚焦你想被雇佣的那一类能力。"
+        ],
+        "en": [
+          "Write real experience; quantify as much as possible.",
+          "Focus on the capabilities you want to be hired for."
+        ]
+      }
+    }
+  ],
+  "skills": [
+    {
+      "group": {
+        "zh": "产品与战略",
+        "en": "Product & Strategy"
+      },
+      "items": {
+        "zh": [
+          "用户研究",
+          "需求分层",
+          "路线图规划",
+          "指标体系",
+          "实验设计",
+          "商业化"
+        ],
+        "en": [
+          "User Research",
+          "Problem Framing",
+          "Roadmapping",
+          "Metrics",
+          "Experimentation",
+          "Monetization"
+        ]
+      }
+    },
+    {
+      "group": {
+        "zh": "设计与体验",
+        "en": "Design & UX"
+      },
+      "items": {
+        "zh": [
+          "信息架构",
+          "交互设计",
+          "可用性测试",
+          "设计系统",
+          "无障碍（基础）"
+        ],
+        "en": [
+          "Information Architecture",
+          "Interaction Design",
+          "Usability Testing",
+          "Design Systems",
+          "Accessibility (basic)"
+        ]
+      }
+    },
+    {
+      "group": {
+        "zh": "数据与工程协作",
+        "en": "Data & Engineering Collaboration"
+      },
+      "items": {
+        "zh": [
+          "SQL/BI",
+          "埋点与数据治理",
+          "PRD→技术方案对齐",
+          "迭代管理"
+        ],
+        "en": [
+          "SQL/BI",
+          "Instrumentation & Governance",
+          "PRD-to-Tech Alignment",
+          "Iteration Management"
+        ]
+      }
+    },
+    {
+      "group": {
+        "zh": "工具箱",
+        "en": "Toolbox"
+      },
+      "items": {
+        "zh": [
+          "Figma",
+          "Notion",
+          "Jira",
+          "Git",
+          "Python（可选）"
+        ],
+        "en": [
+          "Figma",
+          "Notion",
+          "Jira",
+          "Git",
+          "Python (optional)"
+        ]
+      }
+    }
+  ],
+  "i18n": {
+    "zh": {
+      "meta": {
+        "title": "李锦元 Lee | 作品集与个人介绍",
+        "description": "李锦元 Lee 的个人作品集与介绍网站。展示代表性项目、经历与技能。"
+      },
+      "nav": {
+        "about": "关于",
+        "projects": "项目",
+        "experience": "经历",
+        "skills": "技能",
+        "contact": "联系"
+      },
+      "actions": {
+        "theme": "主题",
+        "resume": "下载简历"
+      },
+      "hero": {
+        "eyebrow": "把复杂变简单，把愿景变落地",
+        "title": "产品 / 设计 / 技术（可自定义）",
+        "lead": "用可衡量的结果交付业务价值：更高的转化、更快的交付、更稳的增长。",
+        "ctaPrimary": "查看代表性项目",
+        "ctaSecondary": "联系我"
+      },
+      "card": {
+        "title": "一句话定位",
+        "oneLiner": "面向增长的复合型人才，专注从0到1与从1到N。"
+      },
+      "about": {
+        "title": "关于我",
+        "subtitle": "简洁叙述你的背景、优势与价值观，让雇主/合作方快速形成信任。"
+      },
+      "projects": {
+        "title": "代表性项目",
+        "subtitle": "少即是多：用3–6个项目讲清楚你的方法论与可复制能力。",
+        "filterAll": "全部",
+        "cta": "想了解更多项目细节？我们聊聊"
+      },
+      "experience": {
+        "title": "经历",
+        "subtitle": "用“动作 + 影响 + 指标”的语言呈现你的贡献，避免流水账。"
+      },
+      "skills": {
+        "title": "技能栈",
+        "subtitle": "把技能拆成“能力域”而非堆关键词：战略、执行、工具、协作。"
+      },
+      "contact": {
+        "title": "联系",
+        "subtitle": "让机会能找到你：邮箱、社交、所在地与可合作方向。",
+        "cardTitle": "开放合作 / 求职",
+        "cardText": "如果你正在寻找可以把愿景落地的人，我们可以从一次简短的对话开始。",
+        "email": "发送邮件",
+        "copy": "复制邮箱",
+        "links": "更多链接",
+        "resumePreview": "简历预览",
+        "resumeHint": "把你的简历 PDF 放到 assets/resume.pdf 即可自动生效。",
+        "openResume": "打开 PDF"
+      },
+      "footer": {
+        "rights": "保留所有权利。",
+        "built": "构建于",
+        "note": "（任选其一）"
+      }
+    },
+    "en": {
+      "meta": {
+        "title": "Lee | Portfolio & About",
+        "description": "Lee's personal website showcasing projects, experience and skills."
+      },
+      "nav": {
+        "about": "About",
+        "projects": "Projects",
+        "experience": "Experience",
+        "skills": "Skills",
+        "contact": "Contact"
+      },
+      "actions": {
+        "theme": "Theme",
+        "resume": "Resume"
+      },
+      "hero": {
+        "eyebrow": "Simplify complexity. Ship vision into reality.",
+        "title": "Product / Design / Engineering (customize)",
+        "lead": "Deliver business value with measurable outcomes—higher conversion, faster delivery, steadier growth.",
+        "ctaPrimary": "View featured projects",
+        "ctaSecondary": "Contact"
+      },
+      "card": {
+        "title": "One-liner",
+        "oneLiner": "A growth-minded generalist focused on 0→1 and 1→N."
+      },
+      "about": {
+        "title": "About",
+        "subtitle": "A concise narrative of your background, strengths and values."
+      },
+      "projects": {
+        "title": "Featured Projects",
+        "subtitle": "Less is more: 3–6 projects that prove your repeatable playbook.",
+        "filterAll": "All",
+        "cta": "Want more details? Let’s talk"
+      },
+      "experience": {
+        "title": "Experience",
+        "subtitle": "Use action + impact + metric. Avoid a task list."
+      },
+      "skills": {
+        "title": "Skill Stack",
+        "subtitle": "Group skills by capability domains—not keyword soup."
+      },
+      "contact": {
+        "title": "Contact",
+        "subtitle": "Make it easy for opportunities to reach you.",
+        "cardTitle": "Open to work / collaboration",
+        "cardText": "If you need someone who ships outcomes, let's start with a short conversation.",
+        "email": "Email",
+        "copy": "Copy email",
+        "links": "More links",
+        "resumePreview": "Resume preview",
+        "resumeHint": "Put your PDF at assets/resume.pdf and it will work.",
+        "openResume": "Open PDF"
+      },
+      "footer": {
+        "rights": "All rights reserved.",
+        "built": "Built on",
+        "note": "(choose one)"
+      }
+    }
+  }
 }
-
-html[data-theme="dark"]{
-  --bg: #0c0c12;
-  --surface: #0f0f18;
-  --surface-2: #141423;
-  --text: #f1f1ff;
-  --muted: rgba(241,241,255,.65);
-  --border: rgba(255,255,255,.12);
-  --shadow: 0 16px 40px rgba(0,0,0,.45);
-}
-
-*{ box-sizing: border-box; }
-html,body{ height: 100%; }
-body{
-  margin: 0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-  color: var(--text);
-  background: radial-gradient(900px 400px at 15% 0%, color-mix(in srgb, var(--primary) 25%, transparent), transparent 60%),
-              radial-gradient(900px 400px at 80% 10%, color-mix(in srgb, var(--primary-2) 22%, transparent), transparent 60%),
-              var(--bg);
-  line-height: 1.5;
-}
-
-a{ color: inherit; text-decoration: none; }
-a:hover{ text-decoration: underline; }
-img{ max-width: 100%; height: auto; display: block; }
-
-.container{
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.skip-link{
-  position: absolute;
-  left: -999px;
-  top: 10px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 10px 14px;
-  border-radius: 10px;
-  z-index: 1000;
-}
-.skip-link:focus{ left: 10px; }
-
-.site-header{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(14px);
-  background: color-mix(in srgb, var(--bg) 82%, transparent);
-  border-bottom: 1px solid var(--border);
-}
-
-.header-inner{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  padding: 14px 0;
-}
-
-.brand{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  letter-spacing: .2px;
-}
-
-.logo{
-  display: grid;
-  place-items: center;
-  width: 34px; height: 34px;
-  border-radius: 12px;
-  background: color-mix(in srgb, var(--primary) 22%, transparent);
-  border: 1px solid var(--border);
-}
-
-.nav{
-  display: flex;
-  gap: 18px;
-  font-weight: 600;
-  color: var(--muted);
-}
-.nav a{ padding: 8px 8px; border-radius: 10px; }
-.nav a:hover{ color: var(--text); background: color-mix(in srgb, var(--surface-2) 72%, transparent); text-decoration: none; }
-
-.header-actions{
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.chip{
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 12px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: color-mix(in srgb, var(--surface) 70%, transparent);
-  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset;
-  cursor: pointer;
-  font-weight: 650;
-}
-.chip:hover{ background: color-mix(in srgb, var(--surface-2) 65%, transparent); }
-.chip-icon{ font-size: 14px; opacity: .8; }
-
-.chip-primary{
-  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 24%, var(--surface)), color-mix(in srgb, var(--primary-2) 24%, var(--surface)));
-  border-color: color-mix(in srgb, var(--primary) 25%, var(--border));
-}
-
-main{ padding-bottom: 60px; }
-
-.hero{
-  padding: 42px 0 10px;
-}
-.hero-inner{
-  display: grid;
-  grid-template-columns: 1.2fr .9fr;
-  gap: 24px;
-  align-items: start;
-}
-.eyebrow{
-  color: var(--muted);
-  font-weight: 650;
-  margin: 0 0 12px;
-}
-.hero-title{
-  margin: 0;
-  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
-  letter-spacing: -0.8px;
-  line-height: 1.05;
-}
-.hero-subtitle{
-  display: block;
-  margin-top: 8px;
-  font-size: 1.05rem;
-  font-weight: 650;
-  color: var(--muted);
-}
-.hero-lead{
-  margin: 14px 0 0;
-  font-size: 1.05rem;
-  color: color-mix(in srgb, var(--text) 86%, transparent);
-  max-width: 60ch;
-}
-
-.hero-metrics{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
-  gap: 12px;
-  margin: 18px 0;
-}
-.metric{
-  padding: 12px 12px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
-  background: color-mix(in srgb, var(--surface-2) 70%, transparent);
-}
-.metric strong{
-  display: block;
-  font-size: 1.05rem;
-}
-.metric span{
-  display: block;
-  color: var(--muted);
-  font-size: .9rem;
-  margin-top: 2px;
-}
-
-.hero-cta{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
-
-.btn{
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 14px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: color-mix(in srgb, var(--surface) 72%, transparent);
-  font-weight: 700;
-  cursor: pointer;
-}
-.btn:hover{ background: color-mix(in srgb, var(--surface-2) 70%, transparent); text-decoration: none; }
-.btn-primary{
-  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
-  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 28%, var(--surface)), color-mix(in srgb, var(--primary-2) 26%, var(--surface)));
-}
-.btn-ghost{ background: color-mix(in srgb, var(--surface) 65%, transparent); }
-.btn-icon{ opacity: .85; }
-
-.social{
-  display: flex;
-  gap: 10px;
-  margin-top: 18px;
-  flex-wrap: wrap;
-}
-.social a{
-  padding: 10px 12px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: color-mix(in srgb, var(--surface) 65%, transparent);
-  font-weight: 650;
-}
-.social a:hover{ background: color-mix(in srgb, var(--surface-2) 70%, transparent); text-decoration: none; }
-
-.hero-card{
-  border: 1px solid var(--border);
-  background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 72%, transparent), color-mix(in srgb, var(--surface-2) 70%, transparent));
-  box-shadow: var(--shadow);
-  border-radius: var(--radius);
-  padding: 16px;
-  position: sticky;
-  top: 86px;
-}
-.avatar{
-  width: 56px;
-  height: 56px;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: color-mix(in srgb, var(--primary) 18%, transparent);
-}
-.hero-card-body{ margin-top: 10px; }
-.hero-card-title{ font-weight: 800; font-size: 1.1rem; margin-bottom: 8px; }
-.hero-card-oneLiner{ color: color-mix(in srgb, var(--text) 88%, transparent); font-weight: 650; }
-.hero-card-list{ margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
-.hero-card-list li{ margin: 6px 0; }
-
-.section{ padding: 48px 0 0; }
-.section-head h2{ margin: 0; font-size: 1.8rem; }
-.section-head p{ margin: 8px 0 0; }
-.muted{ color: var(--muted); }
-
-.about-grid{
-  display: grid;
-  grid-template-columns: 1.2fr .8fr;
-  gap: 18px;
-  margin-top: 18px;
-}
-.about-main{
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 18px;
-  background: color-mix(in srgb, var(--surface) 72%, transparent);
-}
-.about-main p{ margin: 0 0 12px; }
-.bullets{ margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
-.bullets li{ margin: 6px 0; }
-
-.about-side{
-  display: grid;
-  gap: 12px;
-}
-.fact{
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 14px;
-  background: color-mix(in srgb, var(--surface-2) 70%, transparent);
-}
-.fact .k{ color: var(--muted); font-weight: 700; font-size: .95rem; }
-.fact .v{ margin-top: 6px; font-weight: 750; }
-
-.filters{
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  margin: 16px 0;
-  flex-wrap: wrap;
-}
-.filter-tags{ display: flex; gap: 8px; flex-wrap: wrap; }
-.filters .chip{ padding: 8px 10px; border-radius: 12px; font-weight: 700; }
-
-.grid{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-.card{
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px;
-  background: color-mix(in srgb, var(--surface) 72%, transparent);
-  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset;
-}
-.card h3{ margin: 0 0 8px; font-size: 1.15rem; }
-.card p{ margin: 0; color: var(--muted); }
-.card .meta{ margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
-.tag{
-  font-size: .85rem;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: color-mix(in srgb, var(--surface-2) 70%, transparent);
-  color: var(--muted);
-  font-weight: 650;
-}
-
-.timeline{
-  display: grid;
-  gap: 12px;
-  margin-top: 14px;
-}
-.titem{
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px;
-  background: color-mix(in srgb, var(--surface) 72%, transparent);
-}
-.titem .top{
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-.titem .org{ color: var(--muted); font-weight: 650; }
-.titem ul{ margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
-.titem li{ margin: 6px 0; }
-
-.skills{
-  display: grid;
-  grid-template-columns: repeat(2, min
