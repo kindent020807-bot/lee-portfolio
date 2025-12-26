@@ -577,102 +577,66 @@ select{
   .doc-list{ grid-template-columns: 1fr; }
 }
 /* ================================
-   Projects polish + stripe fix
+   V2 Visual Reset (remove purple band)
+   Paste at END of styles.css
    ================================ */
 
-/* 1) 彻底去掉 Projects 的装饰横杠（通常来自 ::before/::after 或背景层） */
-#projects {
-  position: relative;
-  overflow: hidden;
-  background: var(--bg);
-
+/* 1) Kill global background layers that create the purple block */
+body{
+  background: var(--bg) !important;      /* no more page-wide gradients */
 }
 
-/* 如果横杠来自伪元素 */
-#projects::before,
-#projects::after {
+/* 如果紫色块来自 body/main 的伪元素（常见） */
+body::before, body::after,
+main::before, main::after{
   content: none !important;
   display: none !important;
 }
 
-/* 如果横杠是某个背景 div（不同模板命名不一，这里做兜底） */
-#projects .stripe,
-#projects .band,
-#projects .bg,
-#projects .bg-layer,
-#projects .section-bg,
-#projects .section-band,
-#projects .decor,
-#projects .decoration {
-  display: none !important;
+/* 2) Re-introduce a controlled, premium gradient ONLY for the hero (top area) */
+.hero{
+  position: relative;
+  overflow: hidden;
 }
 
-/* 2) Filters（标签）更紧凑、更像“研究标签体系” */
-#projects .filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-  margin: 14px 0 18px;
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: -160px -140px auto -140px;
+  height: 520px;
+  background:
+    radial-gradient(720px 320px at 14% 0%,
+      color-mix(in srgb, var(--primary) 18%, transparent), transparent 62%),
+    radial-gradient(720px 320px at 82% 10%,
+      color-mix(in srgb, var(--primary-2) 16%, transparent), transparent 62%);
+  pointer-events: none;
+  z-index: 0;
 }
 
-#projects .filters .chip {
-  padding: 8px 10px;
-  border-radius: 999px;
-  font-size: 13px;
-  line-height: 1;
-}
+/* ensure hero content is above the gradient */
+.hero-inner{ position: relative; z-index: 1; }
 
-#projects .filters .chip.chip-primary {
-  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
-}
-
-/* 3) 项目卡片：对齐、等高、按钮固定在底部 */
-#projects #projectGrid {
+/* 3) Projects layout polish: avoid "single card becomes full-width ugly block" */
+#projects #projectGrid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 440px));
   gap: 16px;
+  justify-content: start;   /* cards align left like a library */
 }
 
-#projects #projectGrid .card {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+#projects #projectGrid .card{
   padding: 18px;
   border-radius: 18px;
-  background: color-mix(in srgb, var(--surface) 82%, transparent);
-  border: 1px solid var(--border);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, .25) inset;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
 }
 
-#projects #projectGrid .card h3 {
-  margin: 0;
-  font-size: 1.05rem;
-  line-height: 1.25;
+/* Make the section look cleaner and separated */
+.section{
+  background: transparent;
 }
 
-#projects #projectGrid .card p {
-  margin: 0;
-  color: var(--muted);
-}
-
-/* tags */
-#projects #projectGrid .card .meta {
-  margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-#projects #projectGrid .tag {
-  font-size: 12px;
-  padding: 6px 10px;
-  border-radius: 999px;
-}
-
-/* 按钮固定到底部，避免卡片高低不齐显得乱 */
-#projects #projectGrid .card .btn,
-#projects #projectGrid .card button.btn {
-  margin-top: auto;
-  align-self: flex-start;
+/* Optional: reduce visual noise of long sections */
+#experience .titem,
+#projects #projectGrid .card{
+  box-shadow: 0 1px 0 rgba(255,255,255,.20) inset;
 }
