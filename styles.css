@@ -576,3 +576,101 @@ select{
   .doc-controls{ grid-template-columns: 1fr; }
   .doc-list{ grid-template-columns: 1fr; }
 }
+/* ================================
+   Projects polish + stripe fix
+   ================================ */
+
+/* 1) 彻底去掉 Projects 的装饰横杠（通常来自 ::before/::after 或背景层） */
+#projects {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 如果横杠来自伪元素 */
+#projects::before,
+#projects::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* 如果横杠是某个背景 div（不同模板命名不一，这里做兜底） */
+#projects .stripe,
+#projects .band,
+#projects .bg,
+#projects .bg-layer,
+#projects .section-bg,
+#projects .section-band,
+#projects .decor,
+#projects .decoration {
+  display: none !important;
+}
+
+/* 2) Filters（标签）更紧凑、更像“研究标签体系” */
+#projects .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 14px 0 18px;
+}
+
+#projects .filters .chip {
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 1;
+}
+
+#projects .filters .chip.chip-primary {
+  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+}
+
+/* 3) 项目卡片：对齐、等高、按钮固定在底部 */
+#projects #projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 16px;
+}
+
+#projects #projectGrid .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  border: 1px solid var(--border);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .25) inset;
+}
+
+#projects #projectGrid .card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+#projects #projectGrid .card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* tags */
+#projects #projectGrid .card .meta {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#projects #projectGrid .tag {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+/* 按钮固定到底部，避免卡片高低不齐显得乱 */
+#projects #projectGrid .card .btn,
+#projects #projectGrid .card button.btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
