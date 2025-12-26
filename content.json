@@ -1,234 +1,342 @@
-<!doctype html>
-<html lang="zh-CN" data-theme="light">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <title>Lee | 作品集与个人介绍</title>
-    <meta name="description" content="Lee 的个人作品集与介绍网站。展示代表性项目、经历与技能。" />
-    <meta property="og:title" content="Lee | 作品集与个人介绍" />
-    <meta property="og:description" content="代表性项目、经历与技能，一页读懂我的价值。" />
-    <meta property="og:type" content="website" />
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
+:root{
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f7f7fb;
+  --text: #0b0b10;
+  --muted: #5a5a6a;
+  --border: rgba(10,10,18,.12);
 
-  <body>
-    <a class="skip-link" href="#main">跳到主要内容</a>
+  --primary: #6d67ff;
+  --primary-2: #bfa8ff;
 
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <span class="logo" aria-hidden="true">✦</span>
-          <span class="brand-name" id="brandName">Lee</span>
-        </div>
+  --shadow: 0 10px 30px rgba(22,22,32,.10);
+  --radius: 18px;
+  --radius-sm: 12px;
 
-        <nav class="nav" aria-label="主导航">
-          <a href="#about" data-i18n="nav.about">关于</a>
-          <a href="#projects" data-i18n="nav.projects">项目</a>
-          <a href="#experience" data-i18n="nav.experience">经历</a>
-          <a href="#skills" data-i18n="nav.skills">技能</a>
-          <a href="#contact" data-i18n="nav.contact">联系</a>
-        </nav>
+  --container: 1120px;
+}
 
-        <div class="header-actions">
-          <button class="chip" id="langToggle" type="button" aria-label="语言切换">
-            <span class="chip-icon" aria-hidden="true">🌐</span>
-            <span id="langToggleText">EN</span>
-          </button>
+html[data-theme="dark"]{
+  --bg: #0c0c12;
+  --surface: #0f0f18;
+  --surface-2: #141423;
+  --text: #f1f1ff;
+  --muted: rgba(241,241,255,.65);
+  --border: rgba(255,255,255,.12);
+  --shadow: 0 16px 40px rgba(0,0,0,.45);
+}
 
-          <button class="chip" id="themeToggle" type="button" aria-label="主题切换">
-            <span class="chip-icon" aria-hidden="true">◑</span>
-            <span data-i18n="actions.theme">主题</span>
-          </button>
+*{ box-sizing: border-box; }
+html,body{ height: 100%; }
+body{
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: var(--text);
+  background: radial-gradient(900px 400px at 15% 0%, color-mix(in srgb, var(--primary) 25%, transparent), transparent 60%),
+              radial-gradient(900px 400px at 80% 10%, color-mix(in srgb, var(--primary-2) 22%, transparent), transparent 60%),
+              var(--bg);
+  line-height: 1.5;
+}
 
-          <a class="chip chip-primary" id="resumeCta" href="./assets/resume.pdf" target="_blank" rel="noopener">
-            <span class="chip-icon" aria-hidden="true">⬇</span>
-            <span data-i18n="actions.resume">下载简历</span>
-          </a>
-        </div>
-      </div>
-    </header>
+a{ color: inherit; text-decoration: none; }
+a:hover{ text-decoration: underline; }
+img{ max-width: 100%; height: auto; display: block; }
 
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow" data-i18n="hero.eyebrow">把复杂变简单，把愿景变落地</p>
-            <h1 class="hero-title">
-              <span id="heroName">Lee</span>
-              <span class="hero-subtitle" id="heroTitle" data-i18n="hero.title">产品 / 设计 / 技术（可自定义）</span>
-            </h1>
-            <p class="hero-lead" id="heroLead" data-i18n="hero.lead">
-              用可衡量的结果交付业务价值：更高的转化、更快的交付、更稳的增长。
-            </p>
+.container{
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-            <div class="hero-metrics" id="heroMetrics" aria-label="关键指标"></div>
+.skip-link{
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.skip-link:focus{ left: 10px; }
 
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="#projects">
-                <span class="btn-icon" aria-hidden="true">↘</span>
-                <span data-i18n="hero.ctaPrimary">查看代表性项目</span>
-              </a>
-              <a class="btn btn-ghost" href="#contact">
-                <span class="btn-icon" aria-hidden="true">✉</span>
-                <span data-i18n="hero.ctaSecondary">联系我</span>
-              </a>
-            </div>
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  border-bottom: 1px solid var(--border);
+}
 
-            <div class="social" id="socialLinks" aria-label="社交链接"></div>
-          </div>
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 0;
+}
 
-          <div class="hero-card" role="region" aria-label="个人简介卡片">
-            <div class="avatar" aria-hidden="true">
-              <img src="./assets/avatar.svg" alt="" />
-            </div>
-            <div class="hero-card-body">
-              <div class="hero-card-title" data-i18n="card.title">一句话定位</div>
-              <div class="hero-card-oneLiner" id="oneLiner">面向增长的复合型人才，对齐用户需求、业务目标与技术现实对齐。</div>
-              <ul class="hero-card-list" id="highlights" aria-label="关键能力要点"></ul>
-            </div>
-          </div>
-        </div>
-      </section>
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
 
-      <section class="section" id="about">
-        <div class="container">
-          <div class="section-head">
-            <h2 data-i18n="about.title">About</h2>
-            <p class="muted" id="aboutSubtitle" data-i18n="about.subtitle">
-              Summarize your professional narrative: problems, approach, and outcomes.
-            </p>
-          </div>
+.logo{
+  display: grid;
+  place-items: center;
+  width: 34px; height: 34px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--primary) 22%, transparent);
+  border: 1px solid var(--border);
+}
 
-          <div class="about-grid">
-            <div class="about-main">
-              <div id="aboutParagraphs"></div>
-              <ul class="bullets" id="aboutBullets"></ul>
-            </div>
+.nav{
+  display: flex;
+  gap: 18px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.nav a{ padding: 8px 8px; border-radius: 10px; }
+.nav a:hover{ color: var(--text); background: color-mix(in srgb, var(--surface-2) 72%, transparent); text-decoration: none; }
 
-            <div class="about-side" id="aboutFacts"></div>
-          </div>
-        </div>
-      </section>
+.header-actions{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 
-      <section class="section" id="projects">
-        <div class="container">
-          <div class="section-head">
-            <h2 data-i18n="projects.title">代表性项目</h2>
-            <p class="muted" data-i18n="projects.subtitle">放 3–6 个最能体现你能力的项目。每个项目要有：目标→动作→结果。</p>
-          </div>
+.chip{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset;
+  cursor: pointer;
+  font-weight: 650;
+}
+.chip:hover{ background: color-mix(in srgb, var(--surface-2) 65%, transparent); }
+.chip-icon{ font-size: 14px; opacity: .8; }
 
-          <div class="filters">
-            <button class="chip" data-filter="all" data-i18n="projects.filterAll">全部</button>
-            <div class="filter-tags" id="projectTags" aria-label="项目标签筛选"></div>
-          </div>
+.chip-primary{
+  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 24%, var(--surface)), color-mix(in srgb, var(--primary-2) 24%, var(--surface)));
+  border-color: color-mix(in srgb, var(--primary) 25%, var(--border));
+}
 
-          <div class="grid" id="projectGrid" aria-label="项目列表"></div>
-        </div>
-      </section>
+main{ padding-bottom: 60px; }
 
-      <section class="section" id="experience">
-        <div class="container">
-          <div class="section-head">
-            <h2 data-i18n="experience.title">经历</h2>
-            <p class="muted" data-i18n="experience.subtitle">建议用：动作 + 影响 + 指标。避免流水账。</p>
-          </div>
+.hero{
+  padding: 42px 0 10px;
+}
+.hero-inner{
+  display: grid;
+  grid-template-columns: 1.2fr .9fr;
+  gap: 24px;
+  align-items: start;
+}
+.eyebrow{
+  color: var(--muted);
+  font-weight: 650;
+  margin: 0 0 12px;
+}
+.hero-title{
+  margin: 0;
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  letter-spacing: -0.8px;
+  line-height: 1.05;
+}
+.hero-subtitle{
+  display: block;
+  margin-top: 8px;
+  font-size: 1.05rem;
+  font-weight: 650;
+  color: var(--muted);
+}
+.hero-lead{
+  margin: 14px 0 0;
+  font-size: 1.05rem;
+  color: color-mix(in srgb, var(--text) 86%, transparent);
+  max-width: 60ch;
+}
 
-          <div class="timeline" id="timeline"></div>
-        </div>
-      </section>
+.hero-metrics{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+.metric{
+  padding: 12px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface-2) 70%, transparent);
+}
+.metric strong{
+  display: block;
+  font-size: 1.05rem;
+}
+.metric span{
+  display: block;
+  color: var(--muted);
+  font-size: .9rem;
+  margin-top: 2px;
+}
 
-      <section class="section" id="skills">
-        <div class="container">
-          <div class="section-head">
-            <h2 data-i18n="skills.title">技能栈</h2>
-            <p class="muted" data-i18n="skills.subtitle">按能力域分组，而不是堆关键词。</p>
-          </div>
+.hero-cta{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
 
-          <div class="skills" id="skillsGrid"></div>
-        </div>
-      </section>
+.btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 72%, transparent);
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn:hover{ background: color-mix(in srgb, var(--surface-2) 70%, transparent); text-decoration: none; }
+.btn-primary{
+  border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 28%, var(--surface)), color-mix(in srgb, var(--primary-2) 26%, var(--surface)));
+}
+.btn-ghost{ background: color-mix(in srgb, var(--surface) 65%, transparent); }
+.btn-icon{ opacity: .85; }
 
-      <section class="section" id="contact">
-        <div class="container">
-          <div class="section-head">
-            <h2 data-i18n="contact.title">联系</h2>
-            <p class="muted" data-i18n="contact.subtitle">让机会更容易找到你。</p>
-          </div>
+.social{
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+.social a{
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 65%, transparent);
+  font-weight: 650;
+}
+.social a:hover{ background: color-mix(in srgb, var(--surface-2) 70%, transparent); text-decoration: none; }
 
-          <div class="contact-grid">
-            <div class="contact-card">
-              <div class="contact-card-title" id="contactTitle">开放合作 / 求职</div>
-              <p class="contact-card-text" id="contactText">
-                如果你正在寻找能把愿景落地、把结果交付的人，我们可以从一次简短的对话开始。
-              </p>
-              <div class="contact-meta" id="contactMeta"></div>
+.hero-card{
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 72%, transparent), color-mix(in srgb, var(--surface-2) 70%, transparent));
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: 16px;
+  position: sticky;
+  top: 86px;
+}
+.avatar{
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--primary) 18%, transparent);
+}
+.hero-card-body{ margin-top: 10px; }
+.hero-card-title{ font-weight: 800; font-size: 1.1rem; margin-bottom: 8px; }
+.hero-card-oneLiner{ color: color-mix(in srgb, var(--text) 88%, transparent); font-weight: 650; }
+.hero-card-list{ margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
+.hero-card-list li{ margin: 6px 0; }
 
-              <div class="contact-actions">
-                <a class="btn btn-primary" id="emailBtn" href="mailto:hello@example.com">
-                  <span class="btn-icon" aria-hidden="true">✉</span>
-                  <span data-i18n="contact.email">邮箱</span>
-                </a>
+.section{ padding: 48px 0 0; }
+.section-head h2{ margin: 0; font-size: 1.8rem; }
+.section-head p{ margin: 8px 0 0; }
+.muted{ color: var(--muted); }
 
-                <button class="btn btn-ghost" id="copyEmailBtn" type="button" data-email="">
-                  <span class="btn-icon" aria-hidden="true">⧉</span>
-                  <span data-i18n="contact.copy">复制邮箱</span>
-                </button>
-              </div>
+.about-grid{
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+.about-main{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  background: color-mix(in srgb, var(--surface) 72%, transparent);
+}
+.about-main p{ margin: 0 0 12px; }
+.bullets{ margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
+.bullets li{ margin: 6px 0; }
 
-              <div class="contact-links" id="contactLinks"></div>
-            </div>
+.about-side{
+  display: grid;
+  gap: 12px;
+}
+.fact{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  background: color-mix(in srgb, var(--surface-2) 70%, transparent);
+}
+.fact .k{ color: var(--muted); font-weight: 700; font-size: .95rem; }
+.fact .v{ margin-top: 6px; font-weight: 750; }
 
-            <div class="resume-card" role="region" aria-label="简历预览">
-              <div class="resume-head">
-                <div>
-                  <div class="resume-title" data-i18n="contact.resumePreview">简历预览</div>
-                  <div class="resume-hint" data-i18n="contact.resumeHint">
-                    把你的 PDF 放到 assets/resume.pdf 即可生效。
-                  </div>
-                </div>
-                <a class="btn btn-ghost" id="resumeSecondary" href="./assets/resume.pdf" target="_blank" rel="noopener">
-                  <span class="btn-icon" aria-hidden="true">↗</span>
-                  <span data-i18n="contact.openResume">打开 PDF</span>
-                </a>
-              </div>
+.filters{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+.filter-tags{ display: flex; gap: 8px; flex-wrap: wrap; }
+.filters .chip{ padding: 8px 10px; border-radius: 12px; font-weight: 700; }
 
-              <div class="resume-frame">
-                <iframe title="Resume" src="./assets/resume.pdf"></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.card{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: color-mix(in srgb, var(--surface) 72%, transparent);
+  box-shadow: 0 1px 0 rgba(255,255,255,.25) inset;
+}
+.card h3{ margin: 0 0 8px; font-size: 1.15rem; }
+.card p{ margin: 0; color: var(--muted); }
+.card .meta{ margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+.tag{
+  font-size: .85rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface-2) 70%, transparent);
+  color: var(--muted);
+  font-weight: 650;
+}
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-left">
-          <div class="footer-brand">
-            <span class="logo" aria-hidden="true">✦</span>
-            <span id="footerName">Lee</span>
-          </div>
-          <div class="footer-meta">
-            <span>© <span id="year"></span></span>
-            <span data-i18n="footer.rights">版权所有。</span>
-          </div>
-        </div>
-        <div class="footer-right">
-          <a href="#top" class="to-top">↑ Top</a>
-        </div>
-      </div>
-    </footer>
+.timeline{
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+.titem{
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: color-mix(in srgb, var(--surface) 72%, transparent);
+}
+.titem .top{
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.titem .org{ color: var(--muted); font-weight: 650; }
+.titem ul{ margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+.titem li{ margin: 6px 0; }
 
-    <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-label="项目详情">
-      <div class="modal-backdrop" data-close="1"></div>
-      <div class="modal-panel" role="document">
-        <button class="modal-close" type="button" data-close="1" aria-label="关闭">✕</button>
-        <div class="modal-body" id="modalBody"></div>
-      </div>
-    </div>
-
-    <script src="./script.js"></script>
-  </body>
-</html>
+.skills{
+  display: grid;
+  grid-template-columns: repeat(2, min
