@@ -584,6 +584,8 @@ select{
 #projects {
   position: relative;
   overflow: hidden;
+  background: var(--bg);
+
 }
 
 /* 如果横杠来自伪元素 */
