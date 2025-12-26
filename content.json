@@ -1,682 +1,234 @@
-{
-  "profile": {
-    "name": {
-      "zh": "李锦元 Lee",
-      "en": "Jinyuan Li (Lee)"
-    },
-    "headline": {
-      "zh": "投资 / 研究分析｜AI & Tech（VC / Public Markets）",
-      "en": "Investment & Research Analyst | AI & Tech (VC / Public Markets)"
-    },
-    "lead": {
-      "zh": "把行业叙事拆成可验证假设，把数据与模型沉淀为可复用尽调流程，把结论写成可决策的投资备忘录。",
-      "en": "I translate AI & tech narratives into testable theses, structured diligence, and decision-ready investment memos."
-    },
-    "oneLiner": {
-      "zh": "AI/科技投研：用结构化框架把不确定性压缩成可投资判断。",
-      "en": "AI & tech research: compress uncertainty into investable decisions with structured diligence."
-    },
-    "metrics": [
-      {
-        "value": {
-          "zh": "Thesis→Diligence→Decision",
-          "en": "Thesis → Diligence → Decision"
-        },
-        "label": {
-          "zh": "投研闭环",
-          "en": "Research Loop"
-        }
-      },
-      {
-        "value": {
-          "zh": "TAM / Unit Econ / Valuation",
-          "en": "TAM / Unit Econ / Valuation"
-        },
-        "label": {
-          "zh": "核心框架",
-          "en": "Core Frameworks"
-        }
-      },
-      {
-        "value": {
-          "zh": "SQL / Python / Excel",
-          "en": "SQL / Python / Excel"
-        },
-        "label": {
-          "zh": "数据驱动",
-          "en": "Data-driven"
-        }
-      }
-    ],
-    "highlights": {
-      "zh": [
-        "把模糊研究问题拆成可验证假设与明确评价标准",
-        "快速搭建市场/竞争/单位经济/估值分析，输出决策级 memo",
-        "用数据与模板把尽调流程产品化，提升一致性与可复用性"
-      ],
-      "en": [
-        "Turn ambiguous questions into testable theses and clear evaluation criteria",
-        "Build market/competition/unit-econ/valuation analysis into decision-ready memos",
-        "Productize diligence with data + reusable templates for consistent decisions"
-      ]
-    },
-    "social": [
-      {
-        "label": {
-          "zh": "GitHub",
-          "en": "GitHub"
-        },
-        "url": "https://github.com/kindento020807-bot"
-      },
-      {
-        "label": {
-          "zh": "LinkedIn",
-          "en": "LinkedIn"
-        },
-        "url": "https://www.linkedin.com/in/jinyuan-li-566924374"
-      }
-    ],
-    "email": "jinyuan.li.lee@gmail.com",
-    "resumePath": "./assets/resume.pdf",
-    "contactTitle": {
-      "zh": "Open to Work / 合作交流",
-      "en": "Open to Work / Collaboration"
-    },
-    "contactText": {
-      "zh": "如果你在寻找 AI/科技方向投研与尽调支持（VC / Public Markets / 研究团队），我可以快速把研究问题结构化并交付可决策结论。",
-      "en": "If you need AI/tech diligence and research support, I can turn ambiguous questions into structured analysis and decision-ready outputs."
-    },
-    "contactMeta": {
-      "zh": "New York, NY｜可远程｜可按需出差",
-      "en": "New York, NY | Remote | Open to travel"
-    },
-    "contactLinks": [
-      {
-        "label": {
-          "zh": "邮箱",
-          "en": "Email"
-        },
-        "url": "mailto:jinyuan.li.lee@gmail.com"
-      },
-      {
-        "label": {
-          "zh": "LinkedIn",
-          "en": "LinkedIn"
-        },
-        "url": "https://www.linkedin.com/in/jinyuan-li-566924374"
-      },
-      {
-        "label": {
-          "zh": "下载简历",
-          "en": "Resume"
-        },
-        "url": "./assets/resume.pdf"
-      }
-    ]
-  },
-  "about": {
-    "subtitle": {
-      "zh": "我专注 AI 与科技方向的投研与尽调：把研究结论写成可决策的 memo，并把方法沉淀成可复用的流程。",
-      "en": "I focus on AI & tech investing research and diligence—turning insights into decision-ready memos and reusable operating playbooks."
-    },
-    "paragraphs": {
-      "zh": [
-        "我专注 AI 与科技方向的投资研究与尽调，经历覆盖早期 VC 研究，以及公开市场研究/估值支持。",
-        "我的优势是把研究流程做成“可复用系统”：市场空间（TAM/CAGR）、竞争格局与差异化、单位经济（burn/runway）、可比公司与估值逻辑，并将结论沉淀为结构化投资备忘录，支持团队更快更一致地决策。"
-      ],
-      "en": [
-        "I focus on AI & tech investing research and diligence, with exposure across early-stage VC research and public-market research/valuation support.",
-        "My edge is building repeatable diligence systems—market sizing (TAM/CAGR), competitive mapping, unit economics (burn/runway), comps/valuation—and translating findings into crisp, decision-ready investment memos."
-      ]
-    },
-    "bullets": {
-      "zh": [
-        "研究框架：TAM/CAGR、竞争格局、护城河与风险映射",
-        "尽调模型：单位经济、burn/runway、可比与估值",
-        "工具链：Excel + SQL + Python（pandas），把分析流程产品化"
-      ],
-      "en": [
-        "Frameworks: TAM/CAGR, competitive landscape, moat & risk mapping",
-        "Diligence: unit economics, burn/runway, comps & valuation",
-        "Tooling: Excel + SQL + Python (pandas) to productize analysis workflows"
-      ]
-    },
-    "quickFacts": [
-      {
-        "k": {
-          "zh": "核心方向",
-          "en": "Focus"
-        },
-        "v": {
-          "zh": "AI & Tech 投研 / 尽调",
-          "en": "AI & Tech Research / Diligence"
-        }
-      },
-      {
-        "k": {
-          "zh": "行业",
-          "en": "Industry"
-        },
-        "v": {
-          "zh": "AI / SaaS / Semiconductor",
-          "en": "AI / SaaS / Semiconductors"
-        }
-      },
-      {
-        "k": {
-          "zh": "合作方式",
-          "en": "Engagement"
-        },
-        "v": {
-          "zh": "全职 / 实习 / 兼职（按需）",
-          "en": "Full-time / Internship / Part-time"
-        }
-      }
-    ]
-  },
-  "projects": [
-    {
-      "id": "p1",
-      "title": {
-        "zh": "AI-Agent 平台对比研究与评分框架",
-        "en": "AI-Agent Platform Comparative Research & Scoring Framework"
-      },
-      "summary": {
-        "zh": "建立跨公司可比的评价维度与评分体系，支持投资选择与资本配置决策。",
-        "en": "Built cross-company evaluation criteria and scoring to support investment selection and capital allocation."
-      },
-      "description": {
-        "zh": "围绕性能、可扩展性、效率与可靠性等维度，定义可量化/可复用的研究框架，并将结论沉淀为伙伴评审用建议简报与讨论材料。",
-        "en": "Defined a reusable framework across performance, scalability, efficiency, and reliability, translating findings into partner-ready recommendation briefs."
-      },
-      "role": {
-        "zh": "研究与框架搭建",
-        "en": "Research & Framework Owner"
-      },
-      "tags": [
-        "AI",
-        "Venture Capital",
-        "Research"
-      ],
-      "stack": [
-        "Excel",
-        "Python",
-        "Wind"
-      ],
-      "metrics": {
-        "zh": [
-          "可复用评分维度与模板（内部使用）",
-          "形成对比表与结论摘要",
-          "支持 IC/伙伴讨论"
-        ],
-        "en": [
-          "Reusable scoring rubric & templates (internal)",
-          "Comparison tables + executive summary",
-          "Supported IC/partner discussions"
-        ]
-      },
-      "bullets": {
-        "zh": [
-          "制定评价框架与评分口径",
-          "标准化数据并完成对比分析",
-          "输出简报与讨论要点"
-        ],
-        "en": [
-          "Defined evaluation rubric",
-          "Standardized data and ran comparisons",
-          "Delivered briefs and discussion points"
-        ]
-      },
-      "links": {
-        "case": "",
-        "demo": ""
-      }
-    },
-    {
-      "id": "p2",
-      "title": {
-        "zh": "半导体研究数据库与校验流程",
-        "en": "Semiconductor Research Dataset & Validation Pipeline"
-      },
-      "summary": {
-        "zh": "搭建公司财务与市场数据集，使用 SQL/Python 完成校验与对账，提升研究效率与数据一致性。",
-        "en": "Built datasets and validated/reconciled with SQL/Python to improve research efficiency and consistency."
-      },
-      "description": {
-        "zh": "覆盖设计、foundry、OSAT 等环节，整理公司披露与市场数据库数据，形成可复用的数据底座与校验流程，支持研究报告产出。",
-        "en": "Across design/foundry/OSAT, consolidated filings and market databases into reusable datasets and validation routines supporting research write-ups."
-      },
-      "role": {
-        "zh": "数据与分析",
-        "en": "Data & Analysis"
-      },
-      "tags": [
-        "Semiconductors",
-        "Equity Research",
-        "Data"
-      ],
-      "stack": [
-        "SQL",
-        "Python",
-        "Excel"
-      ],
-      "metrics": {
-        "zh": [
-          "数据清洗与对账流程",
-          "研究数据库维护",
-          "支持分析师报告"
-        ],
-        "en": [
-          "Data cleaning & reconciliation workflow",
-          "Dataset maintenance",
-          "Supported analyst reports"
-        ]
-      },
-      "bullets": {
-        "zh": [
-          "建立数据表结构与口径",
-          "SQL/Python 校验与对账",
-          "趋势与驱动因素分析"
-        ],
-        "en": [
-          "Designed dataset schema",
-          "Validated/reconciled via SQL/Python",
-          "Analyzed trends and drivers"
-        ]
-      },
-      "links": {
-        "case": "",
-        "demo": ""
-      }
-    },
-    {
-      "id": "p3",
-      "title": {
-        "zh": "交易定价支持：可比公司与估值表",
-        "en": "Transaction Pricing Support: Comps & Valuation Tables"
-      },
-      "summary": {
-        "zh": "建立多口径估值可比表（Revenue/EBITDA/P/E），支持交易定价与投资分析。",
-        "en": "Built multi-multiple comps (Revenue/EBITDA/P/E) to support transaction pricing and investment analysis."
-      },
-      "description": {
-        "zh": "在资本市场交易场景下，完成同行基准、估值可比与风险因素梳理，支持投资者材料与披露内容准备。",
-        "en": "Delivered peer benchmarking, comps valuation, and risk factor inputs supporting investor materials and disclosures."
-      },
-      "role": {
-        "zh": "估值与分析支持",
-        "en": "Valuation & Analysis Support"
-      },
-      "tags": [
-        "IB",
-        "Valuation",
-        "Capital Markets"
-      ],
-      "stack": [
-        "Excel"
-      ],
-      "metrics": {
-        "zh": [
-          "可比公司集与倍数口径",
-          "定价支持材料",
-          "风险因素梳理"
-        ],
-        "en": [
-          "Comparable set and multiples",
-          "Pricing support materials",
-          "Risk factor inputs"
-        ]
-      },
-      "bullets": {
-        "zh": [
-          "搭建估值模型与可比表",
-          "同业基准与定价支持",
-          "尽调与风险因素支持"
-        ],
-        "en": [
-          "Built comps and valuation tables",
-          "Benchmarked peers for pricing support",
-          "Supported diligence and risk factors"
-        ]
-      },
-      "links": {
-        "case": "",
-        "demo": ""
-      }
-    }
-  ],
-  "experience": [
-    {
-      "title": {
-        "zh": "Investment Analyst / Research Analyst",
-        "en": "Investment Analyst / Research Analyst"
-      },
-      "org": {
-        "zh": "Digerati Investments & Reciprocity ROI（AI-focused VC）",
-        "en": "Digerati Investments & Reciprocity ROI (AI-focused VC)"
-      },
-      "time": {
-        "zh": "Aug 2025 — Oct 2025｜Los Angeles, CA",
-        "en": "Aug 2025 — Oct 2025 | Los Angeles, CA"
-      },
-      "bullets": {
-        "zh": [
-          "进行早期 AI 与科技公司投研与市场分析，支持投资 thesis 与 sourcing 策略",
-          "分析行业趋势、TAM/CAGR、竞争格局与融资动态，筛选高潜机会并维护 deal pipeline",
-          "完成尽调与财务分析：单位经济、burn rate、runway、估值与可比分析",
-          "撰写投资备忘录与研究简报，归纳 upside、downside 与关键风险点"
-        ],
-        "en": [
-          "Conducted investment research and market analysis on early-stage AI & tech companies, supporting thesis development and sourcing strategy",
-          "Analyzed trends, TAM/CAGR, competitive landscapes, and funding dynamics; screened opportunities and maintained a prioritized deal pipeline",
-          "Performed diligence and financial analysis including unit economics, burn rate, runway, valuation and comps",
-          "Prepared investment memos and research briefs summarizing upside potential, downside risks, and key risk factors"
-        ]
-      }
-    },
-    {
-      "title": {
-        "zh": "Investment / Research Analyst",
-        "en": "Investment / Research Analyst"
-      },
-      "org": {
-        "zh": "INCE Capital（Venture Capital）",
-        "en": "INCE Capital (Venture Capital)"
-      },
-      "time": {
-        "zh": "Jun 2025 — Aug 2025｜Shanghai, China",
-        "en": "Jun 2025 — Aug 2025 | Shanghai, China"
-      },
-      "bullets": {
-        "zh": [
-          "对 AI-agent 平台进行对比研究，支持投资选择与资本配置决策",
-          "搭建评价框架与评分体系：性能、可扩展性、效率、可靠性等维度跨公司对比",
-          "使用 Wind / 公共数据 / Excel / Python（pandas）标准化并分析财务与运营数据",
-          "完成 benchmark 与情景分析，形成 partner 评审用投资建议简报与 IC 讨论材料"
-        ],
-        "en": [
-          "Conducted comparative investment research on AI-agent platforms to support selection and capital allocation decisions",
-          "Developed evaluation frameworks and scoring criteria across performance, scalability, efficiency, and reliability",
-          "Standardized and analyzed financial/operational data using Wind, public datasets, Excel, and Python (pandas)",
-          "Executed benchmarking and scenario analyses; synthesized findings into partner-ready recommendation briefs"
-        ]
-      }
-    },
-    {
-      "title": {
-        "zh": "Equity Research / Data Analyst（Semiconductor）",
-        "en": "Equity Research / Data Analyst (Semiconductor)"
-      },
-      "org": {
-        "zh": "Guosheng Securities",
-        "en": "Guosheng Securities"
-      },
-      "time": {
-        "zh": "May 2022 — Sep 2022｜Shanghai, China",
-        "en": "May 2022 — Sep 2022 | Shanghai, China"
-      },
-      "bullets": {
-        "zh": [
-          "覆盖半导体价值链（设计、foundry、OSAT）的行业研究与公司研究支持",
-          "搭建并维护研究数据库（财务与市场数据），使用 SQL 与 Python 进行校验与对账",
-          "分析财务表现、盈利驱动与行业趋势，支持分析师研究报告产出"
-        ],
-        "en": [
-          "Supported equity and industry research across the semiconductor value chain (design, foundry, OSAT)",
-          "Built and maintained research datasets for company filings and market databases; used SQL and Python for validation and reconciliation",
-          "Analyzed financial performance, profitability drivers, and industry trends to support senior analyst reports"
-        ]
-      }
-    },
-    {
-      "title": {
-        "zh": "Investment Banking Analyst（Valuation & Capital Markets Support）",
-        "en": "Investment Banking Analyst (Valuation & Capital Markets Support)"
-      },
-      "org": {
-        "zh": "UBS Securities",
-        "en": "UBS Securities"
-      },
-      "time": {
-        "zh": "Dec 2022 — Jun 2023｜Beijing, China",
-        "en": "Dec 2022 — Jun 2023 | Beijing, China"
-      },
-      "bullets": {
-        "zh": [
-          "搭建交易定价支持用可比公司估值表（Revenue/EBITDA multiples、P/E）",
-          "完成财务分析与同行基准分析，支持资本市场交易与投资者材料",
-          "协助风险因素分析与尽调，支持信息披露与 downside 评估"
-        ],
-        "en": [
-          "Built valuation comparables (revenue multiples, EBITDA multiples, P/E) to support transaction pricing and investment analysis",
-          "Conducted financial analysis and peer benchmarking for capital markets transactions and investor presentations",
-          "Assisted in risk factor analysis and diligence, supporting disclosures and downside assessment"
-        ]
-      }
-    }
-  ],
-  "skills": [
-    {
-      "group": {
-        "zh": "投资与研究",
-        "en": "Investing & Research"
-      },
-      "items": {
-        "zh": [
-          "投资研究",
-          "行业分析",
-          "公司分析",
-          "投资 thesis",
-          "尽调",
-          "投资备忘录（IC memo）",
-          "组合监控"
-        ],
-        "en": [
-          "Investment Research",
-          "Industry Analysis",
-          "Company Analysis",
-          "Investment Thesis",
-          "Diligence",
-          "IC Memos",
-          "Portfolio Monitoring"
-        ]
-      }
-    },
-    {
-      "group": {
-        "zh": "估值与财务分析",
-        "en": "Valuation & Financial Analysis"
-      },
-      "items": {
-        "zh": [
-          "可比公司分析",
-          "估值（multiples）",
-          "单位经济模型",
-          "burn/runway",
-          "情景分析"
-        ],
-        "en": [
-          "Comps",
-          "Valuation (multiples)",
-          "Unit Economics",
-          "Burn/Runway",
-          "Scenario Analysis"
-        ]
-      }
-    },
-    {
-      "group": {
-        "zh": "数据与工具",
-        "en": "Data & Tools"
-      },
-      "items": {
-        "zh": [
-          "Excel",
-          "SQL",
-          "Python（pandas）",
-          "Tableau",
-          "Wind",
-          "数据清洗与对账"
-        ],
-        "en": [
-          "Excel",
-          "SQL",
-          "Python (pandas)",
-          "Tableau",
-          "Wind",
-          "Data Cleaning & Reconciliation"
-        ]
-      }
-    },
-    {
-      "group": {
-        "zh": "工作方式",
-        "en": "Ways of Working"
-      },
-      "items": {
-        "zh": [
-          "结构化问题拆解",
-          "框架化写作",
-          "跨团队协作",
-          "高频迭代与复盘"
-        ],
-        "en": [
-          "Structured Problem Framing",
-          "Framework Writing",
-          "Cross-functional Collaboration",
-          "Rapid Iteration & Review"
-        ]
-      }
-    }
-  ],
-  "i18n": {
-    "zh": {
-      "meta": {
-        "title": "李锦元 Lee｜投资研究与尽调",
-        "description": "李锦元 Lee 的个人网站：AI & 科技方向投研、尽调、经历与项目。"
-      },
-      "nav": {
-        "about": "关于",
-        "projects": "项目",
-        "experience": "经历",
-        "skills": "技能",
-        "contact": "联系"
-      },
-      "actions": {
-        "theme": "主题",
-        "resume": "下载简历"
-      },
-      "hero": {
-        "eyebrow": "把研究写成结论，把结论写成决策",
-        "title": "产品 / 设计 / 技术（可自定义）",
-        "lead": "用可衡量的结果交付业务价值：更高的转化、更快的交付、更稳的增长。",
-        "ctaPrimary": "查看代表性项目",
-        "ctaSecondary": "联系我"
-      },
-      "card": {
-        "title": "一句话定位",
-        "oneLiner": "面向增长的复合型人才，专注从0到1与从1到N。"
-      },
-      "projects": {
-        "title": "代表性项目",
-        "subtitle": "放 3–6 个最能体现你能力的项目。每个项目要有：目标→动作→结果。",
-        "filterAll": "全部",
-        "filterTag": "标签筛选",
-        "view": "查看详情",
-        "role": "角色",
-        "stack": "Stack",
-        "metrics": "结果/指标",
-        "links": "链接"
-      },
-      "experience": {
-        "title": "经历",
-        "subtitle": "建议用：动作 + 影响 + 指标。避免流水账。"
-      },
-      "skills": {
-        "title": "技能栈",
-        "subtitle": "按能力域分组，而不是堆关键词。"
-      },
-      "contact": {
-        "title": "联系",
-        "subtitle": "让机会更容易找到你。",
-        "cardTitle": "开放合作 / 求职",
-        "cardText": "如果你正在寻找能把愿景落地、把结果交付的人，我们可以从一次简短的对话开始。",
-        "email": "邮箱",
-        "copy": "复制邮箱",
-        "links": "更多链接",
-        "resumePreview": "简历预览",
-        "resumeHint": "把你的 PDF 放到 assets/resume.pdf 即可生效。",
-        "openResume": "打开 PDF"
-      },
-      "footer": {
-        "rights": "版权所有。",
-        "built": "Built on",
-        "note": "（任选其一）"
-      }
-    },
-    "en": {
-      "meta": {
-        "title": "Jinyuan Li (Lee) | Investment & Research",
-        "description": "Portfolio site: AI & tech investing research, diligence, experience, and projects."
-      },
-      "nav": {
-        "about": "About",
-        "projects": "Projects",
-        "experience": "Experience",
-        "skills": "Skills",
-        "contact": "Contact"
-      },
-      "actions": {
-        "theme": "Theme",
-        "resume": "Resume"
-      },
-      "hero": {
-        "eyebrow": "Turn research into theses. Turn theses into decisions.",
-        "title": "Product / Design / Engineering (customize)",
-        "lead": "Deliver business value with measurable outcomes.",
-        "ctaPrimary": "View featured projects",
-        "ctaSecondary": "Contact"
-      },
-      "card": {
-        "title": "One-liner",
-        "oneLiner": "A growth-minded generalist aligning user needs, business goals, and technical reality."
-      },
-      "projects": {
-        "title": "Featured Projects",
-        "subtitle": "Show 3–6 projects that best demonstrate your abilities.",
-        "filterAll": "All",
-        "filterTag": "Filter",
-        "view": "View",
-        "role": "Role",
-        "stack": "Stack",
-        "metrics": "Metrics",
-        "links": "Links"
-      },
-      "experience": {
-        "title": "Experience",
-        "subtitle": "Use action + impact + metric. Avoid a task list."
-      },
-      "skills": {
-        "title": "Skill Stack",
-        "subtitle": "Group skills by capability domains—not keyword soup."
-      },
-      "contact": {
-        "title": "Contact",
-        "subtitle": "Make it easy for opportunities to reach you.",
-        "cardTitle": "Open to work / collaboration",
-        "cardText": "If you need someone who ships outcomes, let's start with a short conversation.",
-        "email": "Email",
-        "copy": "Copy email",
-        "links": "More links",
-        "resumePreview": "Resume preview",
-        "resumeHint": "Put your PDF at assets/resume.pdf and it will work.",
-        "openResume": "Open PDF"
-      },
-      "footer": {
-        "rights": "All rights reserved.",
-        "built": "Built on",
-        "note": "(choose one)"
-      }
-    }
-  }
-}
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Lee | 作品集与个人介绍</title>
+    <meta name="description" content="Lee 的个人作品集与介绍网站。展示代表性项目、经历与技能。" />
+    <meta property="og:title" content="Lee | 作品集与个人介绍" />
+    <meta property="og:description" content="代表性项目、经历与技能，一页读懂我的价值。" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="logo" aria-hidden="true">✦</span>
+          <span class="brand-name" id="brandName">Lee</span>
+        </div>
+
+        <nav class="nav" aria-label="主导航">
+          <a href="#about" data-i18n="nav.about">关于</a>
+          <a href="#projects" data-i18n="nav.projects">项目</a>
+          <a href="#experience" data-i18n="nav.experience">经历</a>
+          <a href="#skills" data-i18n="nav.skills">技能</a>
+          <a href="#contact" data-i18n="nav.contact">联系</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="chip" id="langToggle" type="button" aria-label="语言切换">
+            <span class="chip-icon" aria-hidden="true">🌐</span>
+            <span id="langToggleText">EN</span>
+          </button>
+
+          <button class="chip" id="themeToggle" type="button" aria-label="主题切换">
+            <span class="chip-icon" aria-hidden="true">◑</span>
+            <span data-i18n="actions.theme">主题</span>
+          </button>
+
+          <a class="chip chip-primary" id="resumeCta" href="./assets/resume.pdf" target="_blank" rel="noopener">
+            <span class="chip-icon" aria-hidden="true">⬇</span>
+            <span data-i18n="actions.resume">下载简历</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">把复杂变简单，把愿景变落地</p>
+            <h1 class="hero-title">
+              <span id="heroName">Lee</span>
+              <span class="hero-subtitle" id="heroTitle" data-i18n="hero.title">产品 / 设计 / 技术（可自定义）</span>
+            </h1>
+            <p class="hero-lead" id="heroLead" data-i18n="hero.lead">
+              用可衡量的结果交付业务价值：更高的转化、更快的交付、更稳的增长。
+            </p>
+
+            <div class="hero-metrics" id="heroMetrics" aria-label="关键指标"></div>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects">
+                <span class="btn-icon" aria-hidden="true">↘</span>
+                <span data-i18n="hero.ctaPrimary">查看代表性项目</span>
+              </a>
+              <a class="btn btn-ghost" href="#contact">
+                <span class="btn-icon" aria-hidden="true">✉</span>
+                <span data-i18n="hero.ctaSecondary">联系我</span>
+              </a>
+            </div>
+
+            <div class="social" id="socialLinks" aria-label="社交链接"></div>
+          </div>
+
+          <div class="hero-card" role="region" aria-label="个人简介卡片">
+            <div class="avatar" aria-hidden="true">
+              <img src="./assets/avatar.svg" alt="" />
+            </div>
+            <div class="hero-card-body">
+              <div class="hero-card-title" data-i18n="card.title">一句话定位</div>
+              <div class="hero-card-oneLiner" id="oneLiner">面向增长的复合型人才，对齐用户需求、业务目标与技术现实对齐。</div>
+              <ul class="hero-card-list" id="highlights" aria-label="关键能力要点"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="about.title">About</h2>
+            <p class="muted" id="aboutSubtitle" data-i18n="about.subtitle">
+              Summarize your professional narrative: problems, approach, and outcomes.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-main">
+              <div id="aboutParagraphs"></div>
+              <ul class="bullets" id="aboutBullets"></ul>
+            </div>
+
+            <div class="about-side" id="aboutFacts"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="projects.title">代表性项目</h2>
+            <p class="muted" data-i18n="projects.subtitle">放 3–6 个最能体现你能力的项目。每个项目要有：目标→动作→结果。</p>
+          </div>
+
+          <div class="filters">
+            <button class="chip" data-filter="all" data-i18n="projects.filterAll">全部</button>
+            <div class="filter-tags" id="projectTags" aria-label="项目标签筛选"></div>
+          </div>
+
+          <div class="grid" id="projectGrid" aria-label="项目列表"></div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="experience.title">经历</h2>
+            <p class="muted" data-i18n="experience.subtitle">建议用：动作 + 影响 + 指标。避免流水账。</p>
+          </div>
+
+          <div class="timeline" id="timeline"></div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="skills.title">技能栈</h2>
+            <p class="muted" data-i18n="skills.subtitle">按能力域分组，而不是堆关键词。</p>
+          </div>
+
+          <div class="skills" id="skillsGrid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2 data-i18n="contact.title">联系</h2>
+            <p class="muted" data-i18n="contact.subtitle">让机会更容易找到你。</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-card-title" id="contactTitle">开放合作 / 求职</div>
+              <p class="contact-card-text" id="contactText">
+                如果你正在寻找能把愿景落地、把结果交付的人，我们可以从一次简短的对话开始。
+              </p>
+              <div class="contact-meta" id="contactMeta"></div>
+
+              <div class="contact-actions">
+                <a class="btn btn-primary" id="emailBtn" href="mailto:hello@example.com">
+                  <span class="btn-icon" aria-hidden="true">✉</span>
+                  <span data-i18n="contact.email">邮箱</span>
+                </a>
+
+                <button class="btn btn-ghost" id="copyEmailBtn" type="button" data-email="">
+                  <span class="btn-icon" aria-hidden="true">⧉</span>
+                  <span data-i18n="contact.copy">复制邮箱</span>
+                </button>
+              </div>
+
+              <div class="contact-links" id="contactLinks"></div>
+            </div>
+
+            <div class="resume-card" role="region" aria-label="简历预览">
+              <div class="resume-head">
+                <div>
+                  <div class="resume-title" data-i18n="contact.resumePreview">简历预览</div>
+                  <div class="resume-hint" data-i18n="contact.resumeHint">
+                    把你的 PDF 放到 assets/resume.pdf 即可生效。
+                  </div>
+                </div>
+                <a class="btn btn-ghost" id="resumeSecondary" href="./assets/resume.pdf" target="_blank" rel="noopener">
+                  <span class="btn-icon" aria-hidden="true">↗</span>
+                  <span data-i18n="contact.openResume">打开 PDF</span>
+                </a>
+              </div>
+
+              <div class="resume-frame">
+                <iframe title="Resume" src="./assets/resume.pdf"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <span class="logo" aria-hidden="true">✦</span>
+            <span id="footerName">Lee</span>
+          </div>
+          <div class="footer-meta">
+            <span>© <span id="year"></span></span>
+            <span data-i18n="footer.rights">版权所有。</span>
+          </div>
+        </div>
+        <div class="footer-right">
+          <a href="#top" class="to-top">↑ Top</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-label="项目详情">
+      <div class="modal-backdrop" data-close="1"></div>
+      <div class="modal-panel" role="document">
+        <button class="modal-close" type="button" data-close="1" aria-label="关闭">✕</button>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
