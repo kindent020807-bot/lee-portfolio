@@ -290,27 +290,41 @@
       }
     }
   ],
-  "documents": [
-    {
-      "id": "2025-12-sample-memo",
-      "date": "2025-12-15",
-      "category": "Investment Memo",
-      "title": {
-        "zh": "示例：投资备忘录（占位）",
-        "en": "Sample: Investment Memo (Placeholder)"
-      },
-      "summary": {
-        "zh": "这是一个占位示例。用你的真实 PDF 替换 assets/docs/2025/12/sample-investment-memo.pdf，并按同样方式新增条目。",
-        "en": "Placeholder example. Replace the sample PDF under assets/docs/2025/12/ and add your own entries."
-      },
-      "tags": [
-        "Template",
-        "PDF"
-      ],
-      "file": "./assets/docs/2025/12/sample-investment-memo.pdf",
-      "preview": true
-    }
-  ],
+"documents": [
+  {
+    "id": "2025-12-us-macro-dashboard-cn",
+    "date": "2025-12-25",
+    "category": "Macro",
+    "title": {
+      "zh": "2025年12月｜美国宏观情景分析与资产倾向（中文版）",
+      "en": "Dec 2025 | US Macro Scenario Dashboard (CN)"
+    },
+    "summary": {
+      "zh": "完整报告（CN）。包含：三情景概率、指标仪表盘、资产倾向、触发阈值、12周执行 Playbook 与参考来源。",
+      "en": "Chinese version. Includes scenarios, indicator dashboard, portfolio tilts, trigger thresholds, 12-week playbook, and references."
+    },
+    "tags": ["Macro", "US", "Scenarios", "Dashboard", "CN"],
+    "file": "./assets/docs/2025/12/2025-12_US_Macro_Scenario_Dashboard_CN.pdf",
+    "preview": true
+  },
+  {
+    "id": "2025-12-us-macro-dashboard-en",
+    "date": "2025-12-25",
+    "category": "Macro",
+    "title": {
+      "zh": "2025年12月｜美国宏观情景分析与资产倾向（英文版｜完整翻译）",
+      "en": "Dec 2025 | US Macro Scenario Dashboard (EN | Full Translation)"
+    },
+    "summary": {
+      "zh": "完整英文版（不漏内容）。逐段翻译：情景含义、表格、阈值、建议、监控指标与参考来源。",
+      "en": "English full translation (no omissions): scenarios, tables, triggers, recommendations, monitoring checklist, and references."
+    },
+    "tags": ["Macro", "US", "Scenarios", "Dashboard", "EN"],
+    "file": "./assets/docs/2025/12/2025-12_US_Macro_Scenario_Dashboard_EN.pdf",
+    "preview": true
+  }
+],
+
   "experience": [
     {
       "title": {
