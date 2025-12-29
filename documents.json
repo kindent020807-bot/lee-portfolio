@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "2025-12-us-macro-dashboard-cn",
+    "date": "2025-12-25",
+    "category": "Macro",
+    "title": {
+      "zh": "2025年12月｜美国宏观情景分析与资产倾向（中文版）",
+      "en": "Dec 2025 | US Macro Scenario Dashboard (CN)"
+    },
+    "summary": {
+      "zh": "完整报告（CN）。包含：三情景概率、指标仪表盘、资产倾向、触发阈值、12周执行 Playbook 与参考来源。",
+      "en": "Chinese version. Includes scenarios, indicator dashboard, portfolio tilts, trigger thresholds, 12-week playbook, and references."
+    },
+    "tags": ["Macro", "US", "Scenarios", "Dashboard", "CN"],
+    "file": "./assets/docs/2025/12/2025-12_US_Macro_Scenario_Dashboard_CN.pdf",
+    "preview": true
+  },
+  {
+    "id": "2025-12-us-macro-dashboard-en",
+    "date": "2025-12-25",
+    "category": "Macro",
+    "title": {
+      "zh": "2025年12月｜美国宏观情景分析与资产倾向（英文版｜完整翻译）",
+      "en": "Dec 2025 | US Macro Scenario Dashboard (EN | Full Translation)"
+    },
+    "summary": {
+      "zh": "完整英文版（不漏内容）。逐段翻译：情景含义、表格、阈值、建议、监控指标与参考来源。",
+      "en": "English full translation (no omissions): scenarios, tables, triggers, recommendations, monitoring checklist, and references."
+    },
+    "tags": ["Macro", "US", "Scenarios", "Dashboard", "EN"],
+    "file": "./assets/docs/2025/12/2025-12_US_Macro_Scenario_Dashboard_EN.pdf",
+    "preview": true
+  },
+  {
+    "id": "2025-12-28-adbe-valuation-en",
+    "date": "2025-12-28",
+    "category": "Company Valuation",
+    "title": {
+      "zh": "Adobe（ADBE）估值研究报告（英文）",
+      "en": "Adobe (ADBE) Valuation Research Report (EN)"
+    },
+    "summary": {
+      "zh": "英文版公司估值研究报告：业务结构、盈利质量、现金流、护城河、风险与估值框架（DCF/相对估值）。",
+      "en": "English valuation research report covering business model, profitability, cash generation, moat, key risks, and valuation framework (DCF + multiples)."
+    },
+    "tags": ["ADBE", "Valuation", "DCF", "Software", "Equity Research", "EN"],
+    "file": "./assets/docs/2025/12/2025-12-28_ADBE_Valuation_Research_Report_EN.pdf",
+    "preview": true
+  }
+]
