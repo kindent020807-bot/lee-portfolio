@@ -559,6 +559,20 @@ async function init(){
   // Load content.json
   const res = await fetch('./content.json');
   state.data = await res.json();
+// Load documents library from documents.json (frequent updates live here)
+state.data.documents = state.data.documents || [];
+
+try {
+  const docsRes = await fetch('./documents.json', { cache: 'no-store' });
+  if (docsRes.ok) {
+    const docs = await docsRes.json();
+    if (Array.isArray(docs)) state.data.documents = docs;
+  } else {
+    console.warn('documents.json not found, fallback to content.json documents');
+  }
+} catch (e) {
+  console.warn('documents.json load failed, fallback to content.json documents', e);
+}
 
   // default language: stored -> browser -> zh
   const browserZh = (navigator.language || '').toLowerCase().startsWith('zh');
