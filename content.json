@@ -62,17 +62,11 @@
     },
     "social": [
       {
-        "label": {
-          "zh": "GitHub",
-          "en": "GitHub"
-        },
+        "label": { "zh": "GitHub", "en": "GitHub" },
         "url": "https://github.com/kindento020807-bot"
       },
       {
-        "label": {
-          "zh": "LinkedIn",
-          "en": "LinkedIn"
-        },
+        "label": { "zh": "LinkedIn", "en": "LinkedIn" },
         "url": "https://www.linkedin.com/in/jinyuan-li-566924374"
       }
     ],
@@ -92,28 +86,20 @@
     },
     "contactLinks": [
       {
-        "label": {
-          "zh": "邮箱",
-          "en": "Email"
-        },
+        "label": { "zh": "邮箱", "en": "Email" },
         "url": "mailto:jinyuan.li.lee@gmail.com"
       },
       {
-        "label": {
-          "zh": "LinkedIn",
-          "en": "LinkedIn"
-        },
+        "label": { "zh": "LinkedIn", "en": "LinkedIn" },
         "url": "https://www.linkedin.com/in/jinyuan-li-566924374"
       },
       {
-        "label": {
-          "zh": "简历PDF",
-          "en": "Resume PDF"
-        },
+        "label": { "zh": "简历PDF", "en": "Resume PDF" },
         "url": "./assets/resume.pdf"
       }
     ]
   },
+
   "about": {
     "subtitle": {
       "zh": "AI 与科技方向投研与尽调：把研究结论写成可决策的 memo，并把方法沉淀为可复用的流程。",
@@ -143,37 +129,20 @@
     },
     "quickFacts": [
       {
-        "k": {
-          "zh": "方向",
-          "en": "Focus"
-        },
-        "v": {
-          "zh": "AI & Tech 投研 / 尽调",
-          "en": "AI & Tech Research / Diligence"
-        }
+        "k": { "zh": "方向", "en": "Focus" },
+        "v": { "zh": "AI & Tech 投研 / 尽调", "en": "AI & Tech Research / Diligence" }
       },
       {
-        "k": {
-          "zh": "行业",
-          "en": "Industry"
-        },
-        "v": {
-          "zh": "AI / SaaS / Semiconductors",
-          "en": "AI / SaaS / Semiconductors"
-        }
+        "k": { "zh": "行业", "en": "Industry" },
+        "v": { "zh": "AI / SaaS / Semiconductors", "en": "AI / SaaS / Semiconductors" }
       },
       {
-        "k": {
-          "zh": "合作方式",
-          "en": "Engagement"
-        },
-        "v": {
-          "zh": "全职 / 实习 / 兼职（按需）",
-          "en": "Full-time / Internship / Part-time"
-        }
+        "k": { "zh": "合作方式", "en": "Engagement" },
+        "v": { "zh": "全职 / 实习 / 兼职（按需）", "en": "Full-time / Internship / Part-time" }
       }
     ]
   },
+
   "projects": [
     {
       "id": "p-ai-agent-framework",
@@ -193,44 +162,17 @@
         "zh": "研究与框架搭建",
         "en": "Research & Framework Owner"
       },
-      "tags": [
-        "AI",
-        "VC",
-        "Research"
-      ],
-      "stack": [
-        "Excel",
-        "Python",
-        "Wind"
-      ],
+      "tags": ["AI", "VC", "Research"],
+      "stack": ["Excel", "Python", "Wind"],
       "metrics": {
-        "zh": [
-          "形成可复用评分维度与模板（内部）",
-          "产出对比表与结论摘要",
-          "支持伙伴/IC讨论"
-        ],
-        "en": [
-          "Reusable scoring rubric & templates (internal)",
-          "Comparison tables + executive summary",
-          "Supported partner/IC discussions"
-        ]
+        "zh": ["形成可复用评分维度与模板（内部）", "产出对比表与结论摘要", "支持伙伴/IC讨论"],
+        "en": ["Reusable scoring rubric & templates (internal)", "Comparison tables + executive summary", "Supported partner/IC discussions"]
       },
       "bullets": {
-        "zh": [
-          "制定评价框架与评分口径",
-          "标准化数据并完成对比分析",
-          "输出简报与讨论要点"
-        ],
-        "en": [
-          "Defined evaluation rubric",
-          "Standardized data and ran comparisons",
-          "Delivered briefs and discussion points"
-        ]
+        "zh": ["制定评价框架与评分口径", "标准化数据并完成对比分析", "输出简报与讨论要点"],
+        "en": ["Defined evaluation rubric", "Standardized data and ran comparisons", "Delivered briefs and discussion points"]
       },
-      "links": {
-        "case": "",
-        "demo": ""
-      }
+      "links": { "case": "", "demo": "" }
     },
     {
       "id": "p-semicon-dataset",
@@ -250,115 +192,72 @@
         "zh": "数据与分析",
         "en": "Data & Analysis"
       },
-      "tags": [
-        "Semiconductors",
-        "Equity Research",
-        "Data"
-      ],
-      "stack": [
-        "SQL",
-        "Python",
-        "Excel"
-      ],
+      "tags": ["Semiconductors", "Equity Research", "Data"],
+      "stack": ["SQL", "Python", "Excel"],
       "metrics": {
-        "zh": [
-          "数据清洗与对账流程",
-          "研究数据库维护",
-          "支持分析师报告"
-        ],
-        "en": [
-          "Data cleaning & reconciliation workflow",
-          "Dataset maintenance",
-          "Supported analyst reports"
-        ]
+        "zh": ["数据清洗与对账流程", "研究数据库维护", "支持分析师报告"],
+        "en": ["Data cleaning & reconciliation workflow", "Dataset maintenance", "Supported analyst reports"]
       },
       "bullets": {
-        "zh": [
-          "建立数据表结构与口径",
-          "SQL/Python 校验与对账",
-          "趋势与驱动因素分析"
-        ],
-        "en": [
-          "Designed dataset schema",
-          "Validated/reconciled via SQL/Python",
-          "Analyzed trends and drivers"
-        ]
+        "zh": ["建立数据表结构与口径", "SQL/Python 校验与对账", "趋势与驱动因素分析"],
+        "en": ["Designed dataset schema", "Validated/reconciled via SQL/Python", "Analyzed trends and drivers"]
       },
-      "links": {
-        "case": "",
-        "demo": ""
-      }
+      "links": { "case": "", "demo": "" }
     }
   ],
-"documents": [
-  {
-    "id": "2025-12-us-macro-dashboard-cn",
-    "date": "2025-12-25",
-    "category": "Macro",
-    "title": {
-      "zh": "2025年12月｜美国宏观情景分析与资产倾向（中文版）",
-      "en": "Dec 2025 | US Macro Scenario Dashboard (CN)"
-    },
-    "summary": {
-      "zh": "完整报告（CN）。包含：三情景概率、指标仪表盘、资产倾向、触发阈值、12周执行 Playbook 与参考来源。",
-      "en": "Chinese version. Includes scenarios, indicator dashboard, portfolio tilts, trigger thresholds, 12-week playbook, and references."
-    },
-    "tags": ["Macro", "US", "Scenarios", "Dashboard", "CN"],
-    "file": "./assets/docs/2025/12/2025-12_US_Macro_Scenario_Dashboard_CN.pdf",
-    "preview": true
-  },
-  {
-    "id": "2025-12-us-macro-dashboard-en",
-    "date": "2025-12-25",
-    "category": "Macro",
-    "title": {
-      "zh": "2025年12月｜美国宏观情景分析与资产倾向（英文版｜完整翻译）",
-      "en": "Dec 2025 | US Macro Scenario Dashboard (EN | Full Translation)"
-    },
-    "summary": {
-      "zh": "完整英文版（不漏内容）。逐段翻译：情景含义、表格、阈值、建议、监控指标与参考来源。",
-      "en": "English full translation (no omissions): scenarios, tables, triggers, recommendations, monitoring checklist, and references."
-    },
-    "tags": ["Macro", "US", "Scenarios", "Dashboard", "EN"],
-    "file": "./assets/docs/2025/12/2025-12_US_Macro_Scenario_Dashboard_EN.pdf",
-    "preview": true
-  }
-],
-{
-  "id": "2025-12-us-macro-dashboard-en",
-  "date": "2025-12-25",
-  "category": "Macro",
-  "title": {
-    "zh": "2025年12月｜美国宏观情景分析与资产倾向（英文版｜完整翻译）",
-    "en": "Dec 2025 | US Macro Scenario Dashboard (EN | Full Translation)"
-  },
-  "summary": {
-    "zh": "完整英文版（不漏内容）。逐段翻译：情景含义、表格、阈值、建议、监控指标与参考来源。",
-    "en": "English full translation (no omissions): scenarios, tables, triggers, recommendations, monitoring checklist, and references."
-  },
-  "tags": ["Macro", "US", "Scenarios", "Dashboard", "EN"],
-  "file": "./assets/docs/2025/12/2025-12_US_Macro_Scenario_Dashboard_EN.pdf",
-  "preview": true
-},
-{
-  "id": "2025-12-28-adbe-valuation-en",
-  "date": "2025-12-28",
-  "category": "Company Valuation",
-  "title": {
-    "zh": "Adobe（ADBE）估值研究报告（英文）",
-    "en": "Adobe (ADBE) Valuation Research Report (EN)"
-  },
-  "summary": {
-    "zh": "英文版公司估值研究报告：业务结构、盈利质量、现金流、护城河、风险与估值框架（DCF/相对估值）。",
-    "en": "English valuation research report covering business model, profitability, cash generation, moat, key risks, and valuation framework (DCF + multiples)."
-  },
-  "tags": ["ADBE", "Valuation", "DCF", "Software", "Equity Research", "EN"],
-  "file": "./assets/docs/2025/12/2025-12-28_ADBE_Valuation_Research_Report_EN.pdf",
-  "preview": true
-}
-],
-"experience": [
 
+  "documents": [
+    {
+      "id": "2025-12-us-macro-dashboard-cn",
+      "date": "2025-12-25",
+      "category": "Macro",
+      "title": {
+        "zh": "2025年12月｜美国宏观情景分析与资产倾向（中文版）",
+        "en": "Dec 2025 | US Macro Scenario Dashboard (CN)"
+      },
+      "summary": {
+        "zh": "完整报告（CN）。包含：三情景概率、指标仪表盘、资产倾向、触发阈值、12周执行 Playbook 与参考来源。",
+        "en": "Chinese version. Includes scenarios, indicator dashboard, portfolio tilts, trigger thresholds, 12-week playbook, and references."
+      },
+      "tags": ["Macro", "US", "Scenarios", "Dashboard", "CN"],
+      "file": "./assets/docs/2025/12/2025-12_US_Macro_Scenario_Dashboard_CN.pdf",
+      "preview": true
+    },
+    {
+      "id": "2025-12-us-macro-dashboard-en",
+      "date": "2025-12-25",
+      "category": "Macro",
+      "title": {
+        "zh": "2025年12月｜美国宏观情景分析与资产倾向（英文版｜完整翻译）",
+        "en": "Dec 2025 | US Macro Scenario Dashboard (EN | Full Translation)"
+      },
+      "summary": {
+        "zh": "完整英文版（不漏内容）。逐段翻译：情景含义、表格、阈值、建议、监控指标与参考来源。",
+        "en": "English full translation (no omissions): scenarios, tables, triggers, recommendations, monitoring checklist, and references."
+      },
+      "tags": ["Macro", "US", "Scenarios", "Dashboard", "EN"],
+      "file": "./assets/docs/2025/12/2025-12_US_Macro_Scenario_Dashboard_EN.pdf",
+      "preview": true
+    },
+    {
+      "id": "2025-12-28-adbe-valuation-en",
+      "date": "2025-12-28",
+      "category": "Company Valuation",
+      "title": {
+        "zh": "Adobe（ADBE）估值研究报告（英文）",
+        "en": "Adobe (ADBE) Valuation Research Report (EN)"
+      },
+      "summary": {
+        "zh": "英文版公司估值研究报告：业务结构、盈利质量、现金流、护城河、风险与估值框架（DCF/相对估值）。",
+        "en": "English valuation research report covering business model, profitability, cash generation, moat, key risks, and valuation framework (DCF + multiples)."
+      },
+      "tags": ["ADBE", "Valuation", "DCF", "Software", "Equity Research", "EN"],
+      "file": "./assets/docs/2025/12/2025-12-28_ADBE_Valuation_Research_Report_EN.pdf",
+      "preview": true
+    }
+  ],
+
+  "experience": [
     {
       "title": {
         "zh": "Investment Analyst / Research Analyst（AI-focused VC）",
@@ -468,80 +367,31 @@
       }
     }
   ],
+
   "skills": [
     {
-      "group": {
-        "zh": "投资与研究",
-        "en": "Investing & Research"
-      },
+      "group": { "zh": "投资与研究", "en": "Investing & Research" },
       "items": {
-        "zh": [
-          "投资研究",
-          "行业分析",
-          "公司分析",
-          "投资 thesis",
-          "尽调",
-          "IC memo 写作",
-          "组合监控"
-        ],
-        "en": [
-          "Investment Research",
-          "Industry Analysis",
-          "Company Analysis",
-          "Investment Thesis",
-          "Diligence",
-          "IC Memo Writing",
-          "Portfolio Monitoring"
-        ]
+        "zh": ["投资研究", "行业分析", "公司分析", "投资 thesis", "尽调", "IC memo 写作", "组合监控"],
+        "en": ["Investment Research", "Industry Analysis", "Company Analysis", "Investment Thesis", "Diligence", "IC Memo Writing", "Portfolio Monitoring"]
       }
     },
     {
-      "group": {
-        "zh": "估值与财务分析",
-        "en": "Valuation & Financial Analysis"
-      },
+      "group": { "zh": "估值与财务分析", "en": "Valuation & Financial Analysis" },
       "items": {
-        "zh": [
-          "可比公司分析",
-          "估值（multiples）",
-          "单位经济模型",
-          "burn/runway",
-          "情景分析"
-        ],
-        "en": [
-          "Comps",
-          "Valuation (multiples)",
-          "Unit Economics",
-          "Burn/Runway",
-          "Scenario Analysis"
-        ]
+        "zh": ["可比公司分析", "估值（multiples）", "单位经济模型", "burn/runway", "情景分析"],
+        "en": ["Comps", "Valuation (multiples)", "Unit Economics", "Burn/Runway", "Scenario Analysis"]
       }
     },
     {
-      "group": {
-        "zh": "数据与工具",
-        "en": "Data & Tools"
-      },
+      "group": { "zh": "数据与工具", "en": "Data & Tools" },
       "items": {
-        "zh": [
-          "Excel",
-          "SQL",
-          "Python（pandas）",
-          "Tableau",
-          "Wind",
-          "数据清洗与对账"
-        ],
-        "en": [
-          "Excel",
-          "SQL",
-          "Python (pandas)",
-          "Tableau",
-          "Wind",
-          "Data Cleaning & Reconciliation"
-        ]
+        "zh": ["Excel", "SQL", "Python（pandas）", "Tableau", "Wind", "数据清洗与对账"],
+        "en": ["Excel", "SQL", "Python (pandas)", "Tableau", "Wind", "Data Cleaning & Reconciliation"]
       }
     }
   ],
+
   "i18n": {
     "zh": {
       "meta": {
@@ -565,12 +415,8 @@
         "ctaPrimary": "查看代表性项目",
         "ctaSecondary": "联系我"
       },
-      "card": {
-        "title": "一句话定位"
-      },
-      "about": {
-        "title": "关于"
-      },
+      "card": { "title": "一句话定位" },
+      "about": { "title": "关于" },
       "projects": {
         "title": "代表性项目",
         "subtitle": "重点展示 3–6 个最能代表你能力的项目（可继续扩展）。",
@@ -615,10 +461,9 @@
         "resumeHint": "把你的 PDF 放到 assets/resume.pdf 即可生效。",
         "openResume": "打开 PDF"
       },
-      "footer": {
-        "rights": "版权所有。"
-      }
+      "footer": { "rights": "版权所有。" }
     },
+
     "en": {
       "meta": {
         "title": "Jinyuan Li (Lee) | Investment & Research",
@@ -641,12 +486,8 @@
         "ctaPrimary": "View featured projects",
         "ctaSecondary": "Contact"
       },
-      "card": {
-        "title": "One-liner"
-      },
-      "about": {
-        "title": "About"
-      },
+      "card": { "title": "One-liner" },
+      "about": { "title": "About" },
       "projects": {
         "title": "Featured Projects",
         "subtitle": "Show a few representative projects (you can expand anytime).",
@@ -691,9 +532,7 @@
         "resumeHint": "Put your PDF at assets/resume.pdf and it will work.",
         "openResume": "Open PDF"
       },
-      "footer": {
-        "rights": "All rights reserved."
-      }
+      "footer": { "rights": "All rights reserved." }
     }
   }
 }
