@@ -76,6 +76,8 @@ function setLang(lang){
   $('#langToggleText').textContent = (lang === 'zh') ? 'EN' : '中文';
   applyI18n();
   renderAll();
+   buildDocFilterOptions(state.data.documents || []);
+
 }
 
 function formatYearMonth(ym){
