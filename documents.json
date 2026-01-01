@@ -1,21 +1,20 @@
 [
   {
-  "id": "2026-01-01-ttd-equity-research-en",
-  "date": "2026-01-01",
-  "category": "Equity Research",
-  "title": {
-    "zh": "The Trade Desk（TTD）投研&估值报告（英文）",
-    "en": "The Trade Desk (TTD) Equity Research & Valuation Report (EN)"
+    "id": "2026-01-01-ttd-equity-research-en",
+    "date": "2026-01-01",
+    "category": "Equity Research",
+    "title": {
+      "zh": "The Trade Desk（TTD）投研&估值报告（英文）",
+      "en": "The Trade Desk (TTD) Equity Research & Valuation Report (EN)"
+    },
+    "summary": {
+      "zh": "覆盖商业模式、增长驱动（CTV/零售媒体）、盈利与现金流、竞争风险与估值框架（DCF/相对估值）。",
+      "en": "Covers business model, growth drivers (CTV/retail media), profitability & cash flow, competitive risks, and valuation framework (DCF + multiples)."
+    },
+    "tags": ["TTD", "AdTech", "DSP", "CTV", "Retail Media", "Valuation", "DCF", "EN"],
+    "file": "./assets/docs/2026/01/2026-01-01_TTD_Equity_Research_Valuation_Report_EN.pdf",
+    "preview": true
   },
-  "summary": {
-    "zh": "覆盖商业模式、增长驱动（CTV/零售媒体）、盈利与现金流、竞争风险与估值框架（DCF/相对估值）。",
-    "en": "Covers business model, growth drivers (CTV/retail media), profitability & cash flow, competitive risks, and valuation framework (DCF + multiples)."
-  },
-  "tags": ["TTD", "AdTech", "DSP", "CTV", "Retail Media", "Valuation", "DCF", "EN"],
-  "file": "./assets/docs/2026/01/2026-01-01_TTD_Equity_Research_Valuation_Report_EN.pdf",
-  "preview": true
-}
-
   {
     "id": "2025-12-us-macro-dashboard-cn",
     "date": "2025-12-25",
