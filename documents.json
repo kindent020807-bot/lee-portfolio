@@ -1,4 +1,19 @@
-[
+[{
+  "id": "2026-01-01-glob-equity-research-en",
+  "date": "2026-01-01",
+  "category": "Equity Research",
+  "title": {
+    "zh": "Globant（GLOB）投研&估值报告（英文）",
+    "en": "Globant (GLOB) Equity Research & Valuation Report (EN)"
+  },
+  "summary": {
+    "zh": "英文版投研&估值报告：估值区间/情景分析、AI-first 转型驱动、增长与盈利质量、现金流与资本结构、护城河与风险映射。",
+    "en": "Equity research & valuation memo covering scenario-based valuation range, AI-first strategy drivers, growth and earnings quality, cash flow and capital structure, moat, and key risks."
+  },
+  "tags": ["GLOB", "IT Services", "AI", "Digital Transformation", "Valuation", "DCF", "Equity Research", "EN"],
+  "file": "./assets/docs/2026/01/2026-01-01_GLOB_Equity_Research_Valuation_Report_EN.pdf",
+  "preview": true
+},
   {
     "id": "2026-01-01-ttd-equity-research-en",
     "date": "2026-01-01",
